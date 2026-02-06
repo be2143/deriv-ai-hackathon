@@ -1,0 +1,173 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="utf-8" />
+            <title>AI QA Test Report</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 40px; background: #f1f3f5; }
+                .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                         color: white; padding: 30px; border-radius: 10px; }
+                .stats { display: flex; gap: 20px; margin: 30px 0; flex-wrap: wrap; }
+                .stat-card { flex: 1; min-width: 160px; padding: 20px; border-radius: 8px;
+                            background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+                .passed { border-left: 5px solid #28a745; }
+                .failed { border-left: 5px solid #dc3545; }
+                .test-case { margin: 20px 0; padding: 15px; border-radius: 5px;
+                            background: #fff; border-left: 4px solid #007bff;
+                            box-shadow: 0 1px 4px rgba(0,0,0,0.04); }
+                .screenshot { max-width: 300px; border: 1px solid #ddd; margin: 10px 0; }
+                .priority-high { border-left-color: #dc3545; }
+                .priority-medium { border-left-color: #ffc107; }
+                .priority-low { border-left-color: #28a745; }
+                code { background: #f8f9fa; padding: 2px 4px; border-radius: 3px; }
+            </style>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        </head>
+        <body>
+            <div class="header">
+                <h1>🤖 AI-Powered QA Test Report</h1>
+                <p>Generated: 2026-02-02 17:09:51</p>
+            </div>
+
+            <div class="stats">
+                <div class="stat-card">
+                    <h3>Total Tests</h3>
+                    <h2>8</h2>
+                </div>
+                <div class="stat-card passed">
+                    <h3>Passed</h3>
+                    <h2>4 (50.0%)</h2>
+                </div>
+                <div class="stat-card failed">
+                    <h3>Failed</h3>
+                    <h2>4</h2>
+                </div>
+            </div>
+
+            <canvas id="resultsChart" width="400" height="200"></canvas>
+
+            <h2>Detailed Results</h2>
+        
+            <div class="test-case priority-high">
+                <h3>Form Submission with Valid Data
+                    <span style="float:right; color: red">
+                        FAIL
+                    </span>
+                </h3>
+                <p><strong>Description:</strong> Validate that the form submits successfully when valid data is entered.</p>
+                <p><strong>Priority:</strong> High</p>
+                <p><strong>Type:</strong> functional</p>
+                <p><strong>Execution Time:</strong> 3.83s</p>
+                <p><strong>Expected:</strong> Form submits successfully and user is shown a success message or redirected as expected.</p>
+            <p style="color:red;"><strong>Error:</strong> 'list' object has no attribute 'get'</p><img src="../screenshots/TC001_FAIL_1770037759.png" class="screenshot" alt="Test Evidence" /></div>
+            <div class="test-case priority-high">
+                <h3>Button Click Triggers Expected Action
+                    <span style="float:right; color: red">
+                        FAIL
+                    </span>
+                </h3>
+                <p><strong>Description:</strong> Verify that clicking the single button on the page triggers the expected action.</p>
+                <p><strong>Priority:</strong> High</p>
+                <p><strong>Type:</strong> functional</p>
+                <p><strong>Execution Time:</strong> 2.55s</p>
+                <p><strong>Expected:</strong> Button click triggers the intended behavior such as form submission or navigation.</p>
+            <p style="color:red;"><strong>Error:</strong> 'list' object has no attribute 'get'</p><img src="../screenshots/TC002_FAIL_1770037761.png" class="screenshot" alt="Test Evidence" /></div>
+            <div class="test-case priority-high">
+                <h3>Link Navigation Validation
+                    <span style="float:right; color: red">
+                        FAIL
+                    </span>
+                </h3>
+                <p><strong>Description:</strong> Validate that clicking the link navigates to the correct URL.</p>
+                <p><strong>Priority:</strong> High</p>
+                <p><strong>Type:</strong> functional</p>
+                <p><strong>Execution Time:</strong> 2.33s</p>
+                <p><strong>Expected:</strong> User is navigated to the correct linked page without errors.</p>
+            <p style="color:red;"><strong>Error:</strong> 'list' object has no attribute 'get'</p><img src="../screenshots/TC003_FAIL_1770037764.png" class="screenshot" alt="Test Evidence" /></div>
+            <div class="test-case priority-medium">
+                <h3>Responsive Layout on Various Screen Sizes
+                    <span style="float:right; color: green">
+                        PASS
+                    </span>
+                </h3>
+                <p><strong>Description:</strong> Verify the page layout adapts correctly on desktop, tablet, and mobile screen sizes.</p>
+                <p><strong>Priority:</strong> Medium</p>
+                <p><strong>Type:</strong> ui</p>
+                <p><strong>Execution Time:</strong> 8.35s</p>
+                <p><strong>Expected:</strong> Page layout adjusts appropriately without content overlap or horizontal scrolling.</p>
+            <img src="../screenshots/TC004_1770037772.png" class="screenshot" alt="Test Evidence" /></div>
+            <div class="test-case priority-high">
+                <h3>Accessibility Check for Form and Buttons
+                    <span style="float:right; color: green">
+                        PASS
+                    </span>
+                </h3>
+                <p><strong>Description:</strong> Ensure the form and button have appropriate ARIA labels, roles, and keyboard navigability.</p>
+                <p><strong>Priority:</strong> High</p>
+                <p><strong>Type:</strong> ui</p>
+                <p><strong>Execution Time:</strong> 5.45s</p>
+                <p><strong>Expected:</strong> Form and button are accessible via keyboard and have proper ARIA attributes.</p>
+            <img src="../screenshots/TC005_1770037777.png" class="screenshot" alt="Test Evidence" /></div>
+            <div class="test-case priority-medium">
+                <h3>Content Validation: Text, Images, and Meta Tags
+                    <span style="float:right; color: green">
+                        PASS
+                    </span>
+                </h3>
+                <p><strong>Description:</strong> Verify that all visible text, images, and meta tags (like page title) are correct and as expected.</p>
+                <p><strong>Priority:</strong> Medium</p>
+                <p><strong>Type:</strong> ui</p>
+                <p><strong>Execution Time:</strong> 5.34s</p>
+                <p><strong>Expected:</strong> All text content, images, and meta tags match the expected content and are correctly displayed.</p>
+            <img src="../screenshots/TC006_1770037783.png" class="screenshot" alt="Test Evidence" /></div>
+            <div class="test-case priority-high">
+                <h3>Form Submission with Invalid Inputs
+                    <span style="float:right; color: red">
+                        FAIL
+                    </span>
+                </h3>
+                <p><strong>Description:</strong> Validate that the form shows appropriate error messages and prevents submission when invalid data is entered.</p>
+                <p><strong>Priority:</strong> High</p>
+                <p><strong>Type:</strong> functional</p>
+                <p><strong>Execution Time:</strong> 3.35s</p>
+                <p><strong>Expected:</strong> Form displays validation error messages and does not submit.</p>
+            <p style="color:red;"><strong>Error:</strong> 'list' object has no attribute 'get'</p><img src="../screenshots/TC007_FAIL_1770037786.png" class="screenshot" alt="Test Evidence" /></div>
+            <div class="test-case priority-medium">
+                <h3>Page Load Performance Test
+                    <span style="float:right; color: green">
+                        PASS
+                    </span>
+                </h3>
+                <p><strong>Description:</strong> Measure and validate that the page loads within acceptable performance thresholds.</p>
+                <p><strong>Priority:</strong> Medium</p>
+                <p><strong>Type:</strong> performance</p>
+                <p><strong>Execution Time:</strong> 4.66s</p>
+                <p><strong>Expected:</strong> Page load time is under 3 seconds on a standard broadband connection.</p>
+            <img src="../screenshots/TC008_1770037791.png" class="screenshot" alt="Test Evidence" /></div>
+        <script>
+            const ctx = document.getElementById('resultsChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Passed', 'Failed'],
+                    datasets: [{
+                        data: [4, 4],
+                        backgroundColor: ['#28a745', '#dc3545']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: { position: 'top' },
+                        title: {
+                            display: true,
+                            text: 'Test Results Distribution'
+                        }
+                    }
+                }
+            });
+        </script>
+        </body>
+        </html>
+        
