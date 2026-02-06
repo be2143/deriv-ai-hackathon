@@ -13,3 +13,5 @@ lxml==4.9.3
 webdriver-manager
 imagehash
 python-dotenv
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
