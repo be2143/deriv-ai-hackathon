@@ -11,3 +11,5 @@ py310/
 /env.development
 /env.test
 /env.production
+.DS_Store
+.cursor/
