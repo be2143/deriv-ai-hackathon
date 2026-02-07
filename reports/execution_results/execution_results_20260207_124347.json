@@ -1,0 +1,109 @@
+{
+  "executed_at": "2026-02-07T12:43:47.816144",
+  "test_specs_source": "server/reports/test_specs_www_random_org_20260207_124139.json",
+  "total_tests": 3,
+  "passed": 1,
+  "failed": 2,
+  "total_execution_time": 22.503438472747803,
+  "results": [
+    {
+      "status": "PASS",
+      "execution_time": 3.9361143112182617,
+      "error_message": null,
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/#/",
+          "status": "PASS",
+          "duration": 0.008802175521850586
+        },
+        {
+          "step": 2,
+          "action": "assert_visible",
+          "target": "#invisible > h1",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.02874612808227539
+        },
+        {
+          "step": 3,
+          "action": "assert_text",
+          "target": "#invisible > h1",
+          "value": "True Random Number Service",
+          "status": "PASS",
+          "duration": 0.024733781814575195
+        }
+      ],
+      "total_steps": 3,
+      "passed_steps": 3,
+      "test_name": "Verify Home Page Loads with Main Heading Visible",
+      "test_description": "Navigate to the home page and verify the main heading is visible and correct."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 1.6017341613769531,
+      "error_message": "Message: invalid element state\n  (Session info: chrome=144.0.7559.133)\nStacktrace:\n0   chromedriver                        0x0000000100bd3928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100bcbc04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x00000001006ae640 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74500\n3   chromedriver                        0x00000001006efa08 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 341708\n4   chromedriver                        0x00000001006ed73c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 332800\n5   chromedriver                        0x0000000100736fe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n6   chromedriver                        0x00000001006ec07c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n7   chromedriver                        0x0000000100b92884 cxxbridge1$str$ptr + 2831984\n8   chromedriver                        0x0000000100b95fcc cxxbridge1$str$ptr + 2846136\n9   chromedriver                        0x0000000100b77578 cxxbridge1$str$ptr + 2720612\n10  chromedriver                        0x0000000100b96850 cxxbridge1$str$ptr + 2848316\n11  chromedriver                        0x0000000100b67640 cxxbridge1$str$ptr + 2655276\n12  chromedriver                        0x0000000100bba194 cxxbridge1$str$ptr + 2994048\n13  chromedriver                        0x0000000100bba310 cxxbridge1$str$ptr + 2994428\n14  chromedriver                        0x0000000100bcb85c cxxbridge1$str$ptr + 3065416\n15  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n16  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/#/",
+          "status": "PASS",
+          "duration": 0.01021122932434082
+        },
+        {
+          "step": 2,
+          "action": "type",
+          "target": "#search",
+          "value": "random integer",
+          "status": "FAIL",
+          "error": "Message: invalid element state\n  (Session info: chrome=144.0.7559.133)\nStacktrace:\n0   chromedriver                        0x0000000100bd3928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100bcbc04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x00000001006ae640 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74500\n3   chromedriver                        0x00000001006efa08 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 341708\n4   chromedriver                        0x00000001006ed73c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 332800\n5   chromedriver                        0x0000000100736fe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n6   chromedriver                        0x00000001006ec07c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n7   chromedriver                        0x0000000100b92884 cxxbridge1$str$ptr + 2831984\n8   chromedriver                        0x0000000100b95fcc cxxbridge1$str$ptr + 2846136\n9   chromedriver                        0x0000000100b77578 cxxbridge1$str$ptr + 2720612\n10  chromedriver                        0x0000000100b96850 cxxbridge1$str$ptr + 2848316\n11  chromedriver                        0x0000000100b67640 cxxbridge1$str$ptr + 2655276\n12  chromedriver                        0x0000000100bba194 cxxbridge1$str$ptr + 2994048\n13  chromedriver                        0x0000000100bba310 cxxbridge1$str$ptr + 2994428\n14  chromedriver                        0x0000000100bcb85c cxxbridge1$str$ptr + 3065416\n15  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n16  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+          "duration": 0.022772789001464844
+        }
+      ],
+      "total_steps": 4,
+      "passed_steps": 1,
+      "test_name": "Search Functionality with Valid Query",
+      "test_description": "Enter a valid search query and submit the search form, then verify URL contains the query parameter."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 16.965590000152588,
+      "error_message": "Message: \n",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/#/",
+          "status": "PASS",
+          "duration": 0.015794038772583008
+        },
+        {
+          "step": 2,
+          "action": "assert_visible",
+          "target": "#cookie-banner-necessary",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.014897823333740234
+        },
+        {
+          "step": 3,
+          "action": "click",
+          "target": "#cookie-banner-necessary",
+          "value": null,
+          "status": "FAIL",
+          "error": "Message: \n",
+          "duration": 15.236096858978271
+        }
+      ],
+      "total_steps": 4,
+      "passed_steps": 2,
+      "test_name": "Cookie Banner Necessary Checkbox Interaction",
+      "test_description": "Verify the cookie banner necessary checkbox is visible and can be toggled."
+    }
+  ]
+}

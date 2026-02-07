@@ -13,7 +13,9 @@ Assumptions:
 
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass
+from pathlib import Path
 from typing import Any, Dict, List, Optional, Set
 
 from pydantic import BaseModel, Field, ValidationError, field_validator
@@ -131,7 +133,7 @@ Follow these rules strictly:
    - assert_url_contains
    - assert_disabled
 
-5. All "target" fields must reference element identifiers provided in the UI context.
+5. For "click", "type", "assert_visible", and "assert_disabled", always use the element's "id" or "css_selector" as "target" (never use link text or label—they are unreliable for interaction). For "assert_text", use "value" for the expected text and "target" as id or css_selector when asserting on a specific element. Copy identifiers exactly from the UI context JSON.
 6. Every test must include at least one assertion.
 7. Prefer end-user flows over isolated element checks.
 8. Do not invent UI elements or actions not present in the UI context.
@@ -212,6 +214,7 @@ Correct the output so that:
 - It is valid JSON.
 - It strictly follows the schema.
 - It uses only allowed actions.
+- For click, type, assert_visible, assert_disabled: use only "id" or "css_selector" as target, never text/label.
 - It references only elements from the UI context.
 - It includes a comprehensive suite of test cases (5-15 test cases).
 
@@ -280,35 +283,66 @@ def build_retry_chain(llm: BaseChatModel) -> Runnable:
 
 
 # ---------------------------------------------------------------------------
-# Validation helpers
+# Validation helpers (generic: works with any UI context JSON from any website)
 # ---------------------------------------------------------------------------
+
+
+def _iter_element_like_items(ui_context: Dict[str, Any]):
+    """
+    Yield every element-like item from a UI context, regardless of structure.
+    Supports: elements, headings, forms[].elements, links, buttons, and any
+    top-level list of objects that have id/css_selector/text (crawl-format agnostic).
+    """
+    # Known keys used by various crawl/output formats
+    for key in ("elements", "headings", "links", "buttons"):
+        for el in ui_context.get(key, []):
+            if isinstance(el, dict):
+                yield el
+    for form in ui_context.get("forms", []):
+        if isinstance(form, dict):
+            for el in form.get("elements", []):
+                if isinstance(el, dict):
+                    yield el
+    # Fallback: any top-level list of dicts with at least one selector-like field
+    for key, val in ui_context.items():
+        if key in ("elements", "headings", "forms", "links", "buttons", "pages", "summary"):
+            continue
+        if isinstance(val, list):
+            for item in val:
+                if isinstance(item, dict) and (
+                    item.get("css_selector") or item.get("id") or item.get("text")
+                ):
+                    yield item
+
+
+def _element_identifiers(el: Dict[str, Any]) -> Set[str]:
+    """Collect all valid target identifiers from a single element (any structure)."""
+    allowed: Set[str] = set()
+    for key in ("id", "name", "data_testid", "label", "identifier", "css_selector", "text"):
+        val = el.get(key)
+        if isinstance(val, str) and val.strip():
+            allowed.add(val.strip())
+    container = el.get("container") or {}
+    if isinstance(container, dict):
+        cid = container.get("id")
+        if isinstance(cid, str) and cid.strip():
+            allowed.add("#" + cid.strip())
+    return allowed
 
 
 def extract_allowed_targets(ui_context: Dict[str, Any]) -> Set[str]:
     """
-    Compute the set of valid element identifiers from the UI context.
-
-    Expected UI context example (simplified):
-    {
-      "page_url": "...",
-      "elements": [
-        {
-          "id": "email_input",
-          "name": "email",
-          "data_testid": "email-input",
-          "label": "Email",
-          "role": "input"
-        },
-        ...
-      ]
-    }
+    Compute the set of valid element identifiers from any UI context JSON.
+    Works with any website crawl format: uses elements, headings, forms, links,
+    buttons, and a generic fallback for other element-like lists. Also adds
+    page-level "title" when present.
     """
     allowed: Set[str] = set()
-    for el in ui_context.get("elements", []):
-        for key in ("id", "name", "data_testid", "label", "identifier"):
-            val = el.get(key)
-            if isinstance(val, str) and val.strip():
-                allowed.add(val.strip())
+    title_val = ui_context.get("title")
+    if isinstance(title_val, str) and title_val.strip():
+        allowed.add("title")
+    for el in _iter_element_like_items(ui_context):
+        allowed |= _element_identifiers(el)
     return allowed
 
 
@@ -332,9 +366,12 @@ def validate_targets_against_context(test_spec: TestSpec, ui_context: Dict[str, 
     ]
     if invalid_targets:
         unique = sorted(set(invalid_targets))
+        hint = ""
+        if any(t and t.startswith("#") and " " in t for t in unique):
+            hint = " Do not use '#Link Text'; use the exact css_selector or id from the UI context."
         raise ValueError(
             f"Unknown targets in test steps: {unique}. "
-            f"Allowed targets are derived from UI context: {sorted(allowed_targets)[:30]}..."
+            f"Allowed targets are derived from UI context: {sorted(allowed_targets)[:30]}...{hint}"
         )
 
 
@@ -363,6 +400,7 @@ def run_langchain_ui_test_pipeline(
     payload: UITestEngineInput,
     *,
     max_retries: int = 1,
+    save_to_reports: bool = True,
 ) -> List[TestSpec]:
     """
     End-to-end pipeline:
@@ -370,11 +408,20 @@ def run_langchain_ui_test_pipeline(
     - Calls LangChain test spec chain.
     - Validates schema and targets against UI context.
     - Optionally retries once with a corrective prompt.
+    - Saves test specs as JSON to reports folder.
+
+    Args:
+        llm: LangChain chat model
+        payload: UI test engine input with context and requirements
+        max_retries: Maximum retry attempts on validation failure
+        save_to_reports: If True, save test specs JSON to reports/ folder
 
     Returns:
         List of TestSpec instances (comprehensive test suite) suitable for downstream code generation.
     """
     import json
+    import os
+    from datetime import datetime
 
     ui_context_json = json.dumps(payload.ui_context, ensure_ascii=False)
     functional_text = "\n".join(payload.functional_requirements)
@@ -411,7 +458,7 @@ def run_langchain_ui_test_pipeline(
     try:
         test_suite = _invoke_chain(test_spec_chain)
         validate_test_suite(test_suite, payload.ui_context)
-        return test_suite.test_cases
+        test_cases = test_suite.test_cases
     except (ValidationError, ValueError) as e:
         if max_retries <= 0:
             raise
@@ -419,7 +466,34 @@ def run_langchain_ui_test_pipeline(
         # Retry with explicit error feedback
         test_suite = _invoke_chain(retry_chain, errors=str(e))
         validate_test_suite(test_suite, payload.ui_context)
-        return test_suite.test_cases
+        test_cases = test_suite.test_cases
+
+    # Save to reports folder
+    if save_to_reports:
+        reports_dir = Path("reports")
+        reports_dir.mkdir(exist_ok=True)
+        
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        page_url = payload.ui_context.get("page_url", "unknown")
+        # Create a safe filename from URL
+        safe_name = re.sub(r"[^a-zA-Z0-9]", "_", page_url.replace("https://", "").replace("http://", "").split("/")[0])[:30]
+        filename = f"test_specs_{safe_name}_{timestamp}.json"
+        file_path = reports_dir / filename
+        
+        # Convert test cases to JSON-serializable format
+        test_specs_json = {
+            "generated_at": datetime.now().isoformat(),
+            "page_url": page_url,
+            "total_test_cases": len(test_cases),
+            "test_cases": [spec.model_dump() for spec in test_cases],
+        }
+        
+        with file_path.open("w", encoding="utf-8") as f:
+            json.dump(test_specs_json, f, indent=2, ensure_ascii=False)
+        
+        print(f"✅ Test specs saved to: {file_path}")
+
+    return test_cases
 
 
 __all__ = [

@@ -1,0 +1,412 @@
+{
+  "executed_at": "2026-02-07T12:27:40.389063",
+  "test_specs_source": "server/reports/test_specs_www_random_org_20260207_122515.json",
+  "total_tests": 13,
+  "passed": 2,
+  "failed": 11,
+  "total_execution_time": 24.691495895385742,
+  "results": [
+    {
+      "status": "PASS",
+      "execution_time": 3.6509439945220947,
+      "error_message": null,
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/#/",
+          "status": "PASS",
+          "duration": 0.017562150955200195
+        },
+        {
+          "step": 2,
+          "action": "assert_text",
+          "target": "#invisible > h1",
+          "value": "True Random Number Service",
+          "status": "PASS",
+          "duration": 0.020230770111083984
+        },
+        {
+          "step": 3,
+          "action": "assert_visible",
+          "target": "#invisible > h1",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.02200603485107422
+        }
+      ],
+      "total_steps": 3,
+      "passed_steps": 3,
+      "test_name": "Navigate to Home Page and Verify Title and Heading",
+      "test_description": "User navigates to the home page and verifies the page title and main heading are visible and correct."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 1.9163661003112793,
+      "error_message": "'#search > form > div > input:nth-of-type(2)'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/#/",
+          "status": "PASS",
+          "duration": 0.013860940933227539
+        },
+        {
+          "step": 2,
+          "action": "type",
+          "target": "#search > form > div > input:nth-of-type(1)",
+          "value": "integer generator",
+          "status": "PASS",
+          "duration": 0.10193204879760742
+        },
+        {
+          "step": 3,
+          "action": "click",
+          "target": "#search > form > div > input:nth-of-type(2)",
+          "value": null,
+          "status": "FAIL",
+          "error": "'#search > form > div > input:nth-of-type(2)'",
+          "duration": 0.005912065505981445
+        }
+      ],
+      "total_steps": 4,
+      "passed_steps": 2,
+      "test_name": "Search for a Tool Using Quick Search with Valid Input",
+      "test_description": "User enters a valid search term in the search input and submits the form, then verifies the URL contains the search query."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 1.4874231815338135,
+      "error_message": "No selector found for target 'Numbers'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/#/",
+          "status": "PASS",
+          "duration": 0.01337289810180664
+        },
+        {
+          "step": 2,
+          "action": "click",
+          "target": "Numbers",
+          "value": null,
+          "status": "FAIL",
+          "error": "No selector found for target 'Numbers'",
+          "duration": 5.698204040527344e-05
+        }
+      ],
+      "total_steps": 4,
+      "passed_steps": 1,
+      "test_name": "Navigate to Integer Generator via Navigation Menu",
+      "test_description": "User clicks on the 'Numbers' menu and then selects 'Integer Generator' from the submenu, verifying the page loads correctly."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 1.5744569301605225,
+      "error_message": "No selector found for target 'Integer Generator'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/#/",
+          "status": "PASS",
+          "duration": 0.009721040725708008
+        },
+        {
+          "step": 2,
+          "action": "click",
+          "target": "Integer Generator",
+          "value": null,
+          "status": "FAIL",
+          "error": "No selector found for target 'Integer Generator'",
+          "duration": 3.409385681152344e-05
+        }
+      ],
+      "total_steps": 6,
+      "passed_steps": 1,
+      "test_name": "Generate Single Random Integer with Valid Range",
+      "test_description": "User inputs a valid minimum and maximum range and clicks the generate button, then verifies that results are displayed."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 1.5720109939575195,
+      "error_message": "No selector found for target 'Integer Generator'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/#/",
+          "status": "PASS",
+          "duration": 0.014396905899047852
+        },
+        {
+          "step": 2,
+          "action": "click",
+          "target": "Integer Generator",
+          "value": null,
+          "status": "FAIL",
+          "error": "No selector found for target 'Integer Generator'",
+          "duration": 4.410743713378906e-05
+        }
+      ],
+      "total_steps": 6,
+      "passed_steps": 1,
+      "test_name": "Generate Random Integer with Min Greater Than Max Shows Error",
+      "test_description": "User inputs a minimum value greater than the maximum value and attempts to generate a number, expecting an error message or validation feedback."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 1.7776169776916504,
+      "error_message": "No selector found for target 'List Randomizer'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/#/",
+          "status": "PASS",
+          "duration": 0.0064351558685302734
+        },
+        {
+          "step": 2,
+          "action": "click",
+          "target": "List Randomizer",
+          "value": null,
+          "status": "FAIL",
+          "error": "No selector found for target 'List Randomizer'",
+          "duration": 3.314018249511719e-05
+        }
+      ],
+      "total_steps": 3,
+      "passed_steps": 1,
+      "test_name": "Navigate to List Randomizer and Verify Interface",
+      "test_description": "User navigates to the List Randomizer tool and verifies the interface elements are visible and enabled."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 1.5243661403656006,
+      "error_message": "No selector found for target 'List Randomizer'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/#/",
+          "status": "PASS",
+          "duration": 0.0039882659912109375
+        },
+        {
+          "step": 2,
+          "action": "click",
+          "target": "List Randomizer",
+          "value": null,
+          "status": "FAIL",
+          "error": "No selector found for target 'List Randomizer'",
+          "duration": 1.3113021850585938e-05
+        }
+      ],
+      "total_steps": 5,
+      "passed_steps": 1,
+      "test_name": "Shuffle a List with Valid Items and Verify Results",
+      "test_description": "User enters multiple list items into the List Randomizer, clicks randomize, and verifies that results are displayed."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 1.6258819103240967,
+      "error_message": "No selector found for target 'Coin Flipper'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/#/",
+          "status": "PASS",
+          "duration": 0.012890815734863281
+        },
+        {
+          "step": 2,
+          "action": "click",
+          "target": "Coin Flipper",
+          "value": null,
+          "status": "FAIL",
+          "error": "No selector found for target 'Coin Flipper'",
+          "duration": 2.7894973754882812e-05
+        }
+      ],
+      "total_steps": 3,
+      "passed_steps": 1,
+      "test_name": "Navigate to Coin Flipper Simulation and Verify Visibility",
+      "test_description": "User navigates to the Coin Flipper simulation tool and verifies the main heading and controls are visible."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 1.6089410781860352,
+      "error_message": "No selector found for target 'Games'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/#/",
+          "status": "PASS",
+          "duration": 0.00911712646484375
+        },
+        {
+          "step": 2,
+          "action": "click",
+          "target": "Games",
+          "value": null,
+          "status": "FAIL",
+          "error": "No selector found for target 'Games'",
+          "duration": 2.8848648071289062e-05
+        }
+      ],
+      "total_steps": 7,
+      "passed_steps": 1,
+      "test_name": "Navigate Through Multiple Navigation Links and Verify Page Transitions",
+      "test_description": "User clicks through several main navigation links and verifies the page content changes accordingly."
+    },
+    {
+      "status": "PASS",
+      "execution_time": 2.9142158031463623,
+      "error_message": null,
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/#/",
+          "status": "PASS",
+          "duration": 0.0036280155181884766
+        },
+        {
+          "step": 2,
+          "action": "assert_visible",
+          "target": "#cookie-banner > div > span > button.btn.btn-default.btn-xs.rdo-input:nth-of-type(1)",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.009408950805664062
+        },
+        {
+          "step": 3,
+          "action": "assert_visible",
+          "target": "#cookie-banner > div > span > button.btn.btn-default.btn-xs.rdo-input:nth-of-type(2)",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.022060155868530273
+        },
+        {
+          "step": 4,
+          "action": "assert_disabled",
+          "target": "#cookie-banner-necessary",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.02337789535522461
+        }
+      ],
+      "total_steps": 4,
+      "passed_steps": 4,
+      "test_name": "Verify Cookie Banner Buttons Are Visible and Clickable",
+      "test_description": "User verifies that cookie banner buttons for acceptance and preferences are visible and enabled."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 1.9272880554199219,
+      "error_message": "'#search > form > div > input:nth-of-type(2)'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/#/",
+          "status": "PASS",
+          "duration": 0.007565021514892578
+        },
+        {
+          "step": 2,
+          "action": "type",
+          "target": "#search > form > div > input:nth-of-type(1)",
+          "value": "",
+          "status": "PASS",
+          "duration": 0.038188934326171875
+        },
+        {
+          "step": 3,
+          "action": "click",
+          "target": "#search > form > div > input:nth-of-type(2)",
+          "value": null,
+          "status": "FAIL",
+          "error": "'#search > form > div > input:nth-of-type(2)'",
+          "duration": 0.011064767837524414
+        }
+      ],
+      "total_steps": 4,
+      "passed_steps": 2,
+      "test_name": "Attempt Search with Empty Input and Verify No Navigation",
+      "test_description": "User submits the search form with an empty input and verifies that the page does not navigate or change URL."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 1.7282018661499023,
+      "error_message": "No selector found for target 'Login'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/#/",
+          "status": "PASS",
+          "duration": 0.015454292297363281
+        },
+        {
+          "step": 2,
+          "action": "click",
+          "target": "Login",
+          "value": null,
+          "status": "FAIL",
+          "error": "No selector found for target 'Login'",
+          "duration": 2.4080276489257812e-05
+        }
+      ],
+      "total_steps": 4,
+      "passed_steps": 1,
+      "test_name": "Navigate to Login Page and Verify URL and Heading",
+      "test_description": "User clicks the Login link and verifies the URL changes and login page heading is visible."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 1.3837828636169434,
+      "error_message": "No selector found for target 'Twitter'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/#/",
+          "status": "PASS",
+          "duration": 0.010228872299194336
+        },
+        {
+          "step": 2,
+          "action": "assert_visible",
+          "target": "Twitter",
+          "value": null,
+          "status": "FAIL",
+          "error": "No selector found for target 'Twitter'",
+          "duration": 3.504753112792969e-05
+        }
+      ],
+      "total_steps": 5,
+      "passed_steps": 1,
+      "test_name": "Verify Footer Links Are Visible and Clickable",
+      "test_description": "User scrolls to footer and verifies that social media and legal links are visible and clickable."
+    }
+  ]
+}

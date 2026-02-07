@@ -1,0 +1,526 @@
+{
+  "executed_at": "2026-02-07T12:54:25.605310",
+  "test_specs_source": "server/reports/test_specs_www_random_org_20260207_125257.json",
+  "total_tests": 15,
+  "passed": 0,
+  "failed": 15,
+  "total_execution_time": 36.4005229473114,
+  "results": [
+    {
+      "status": "FAIL",
+      "execution_time": 3.218810796737671,
+      "error_message": "Expected '/integers/' in URL 'https://www.random.org/'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": "Integers",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.5417947769165039
+        },
+        {
+          "step": 2,
+          "action": "assert_url_contains",
+          "target": null,
+          "value": "/integers/",
+          "status": "FAIL",
+          "error": "Expected '/integers/' in URL 'https://www.random.org/'",
+          "duration": 0.005263090133666992
+        }
+      ],
+      "total_steps": 6,
+      "passed_steps": 1,
+      "test_name": "Navigate to Integers Generator and Generate Single Random Integer",
+      "test_description": "User navigates to the Integers generator page, inputs a valid min and max range, submits the form, and verifies that results are displayed."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 3.2036709785461426,
+      "error_message": "No selector found for target 'element_135'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": "Integers",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.589379072189331
+        },
+        {
+          "step": 2,
+          "action": "type",
+          "target": "q",
+          "value": "5",
+          "status": "PASS",
+          "duration": 0.11060404777526855
+        },
+        {
+          "step": 3,
+          "action": "type",
+          "target": "q",
+          "value": "15",
+          "status": "PASS",
+          "duration": 0.031279802322387695
+        },
+        {
+          "step": 4,
+          "action": "type",
+          "target": "q",
+          "value": "5",
+          "status": "PASS",
+          "duration": 0.04158425331115723
+        },
+        {
+          "step": 5,
+          "action": "click",
+          "target": "element_135",
+          "value": null,
+          "status": "FAIL",
+          "error": "No selector found for target 'element_135'",
+          "duration": 0.00018095970153808594
+        }
+      ],
+      "total_steps": 6,
+      "passed_steps": 4,
+      "test_name": "Generate Multiple Random Integers with Valid Range",
+      "test_description": "User navigates to Integers generator, inputs min and max range and quantity, submits, and verifies multiple results are shown."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 2.4155988693237305,
+      "error_message": "No selector found for target 'element_135'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": "List Randomizer",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.5421209335327148
+        },
+        {
+          "step": 2,
+          "action": "type",
+          "target": "q",
+          "value": "apple\nbanana\ncherry\n",
+          "status": "PASS",
+          "duration": 0.08063673973083496
+        },
+        {
+          "step": 3,
+          "action": "click",
+          "target": "element_135",
+          "value": null,
+          "status": "FAIL",
+          "error": "No selector found for target 'element_135'",
+          "duration": 3.814697265625e-05
+        }
+      ],
+      "total_steps": 4,
+      "passed_steps": 2,
+      "test_name": "Shuffle List Randomizer with Valid List Items",
+      "test_description": "User navigates to List Randomizer, inputs multiple list items, clicks randomize, and verifies shuffled results are displayed."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 2.402860164642334,
+      "error_message": "No selector found for target 'element_135'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": "Coin Flipper",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.4945969581604004
+        },
+        {
+          "step": 2,
+          "action": "click",
+          "target": "element_135",
+          "value": null,
+          "status": "FAIL",
+          "error": "No selector found for target 'element_135'",
+          "duration": 2.4080276489257812e-05
+        }
+      ],
+      "total_steps": 3,
+      "passed_steps": 1,
+      "test_name": "Coin Flipper Simulation Basic Functionality",
+      "test_description": "User navigates to Coin Flipper tool, triggers a flip, and verifies that a result is displayed."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 1.9414629936218262,
+      "error_message": "No selector found for target 'element_135'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": "Dice Roller",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.3875269889831543
+        },
+        {
+          "step": 2,
+          "action": "click",
+          "target": "element_135",
+          "value": null,
+          "status": "FAIL",
+          "error": "No selector found for target 'element_135'",
+          "duration": 2.47955322265625e-05
+        }
+      ],
+      "total_steps": 3,
+      "passed_steps": 1,
+      "test_name": "Dice Roller Simulation Basic Functionality",
+      "test_description": "User navigates to Dice Roller tool, rolls dice, and verifies that dice roll results are displayed."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 2.246224880218506,
+      "error_message": "No selector found for target 'element_135'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": "Playing Card Shuffler",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.6979320049285889
+        },
+        {
+          "step": 2,
+          "action": "click",
+          "target": "element_135",
+          "value": null,
+          "status": "FAIL",
+          "error": "No selector found for target 'element_135'",
+          "duration": 4.6253204345703125e-05
+        }
+      ],
+      "total_steps": 3,
+      "passed_steps": 1,
+      "test_name": "Playing Card Shuffler Basic Functionality",
+      "test_description": "User navigates to Playing Card Shuffler, shuffles cards, and verifies shuffled deck is displayed."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 3.1393871307373047,
+      "error_message": "No selector found for target 'element_135'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": "Decimal Fractions",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.30353379249572754
+        },
+        {
+          "step": 2,
+          "action": "type",
+          "target": "q",
+          "value": "0.1",
+          "status": "PASS",
+          "duration": 0.5319931507110596
+        },
+        {
+          "step": 3,
+          "action": "type",
+          "target": "q",
+          "value": "0.9",
+          "status": "PASS",
+          "duration": 0.0307466983795166
+        },
+        {
+          "step": 4,
+          "action": "click",
+          "target": "element_135",
+          "value": null,
+          "status": "FAIL",
+          "error": "No selector found for target 'element_135'",
+          "duration": 0.0011360645294189453
+        }
+      ],
+      "total_steps": 5,
+      "passed_steps": 3,
+      "test_name": "Generate Decimal Fractions with Valid Input",
+      "test_description": "User navigates to Decimal Fractions generator, inputs valid parameters, submits, and verifies results are shown."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 2.1063549518585205,
+      "error_message": "No selector found for target 'element_135'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": "Hex Color Codes",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.5235788822174072
+        },
+        {
+          "step": 2,
+          "action": "click",
+          "target": "element_135",
+          "value": null,
+          "status": "FAIL",
+          "error": "No selector found for target 'element_135'",
+          "duration": 3.314018249511719e-05
+        }
+      ],
+      "total_steps": 3,
+      "passed_steps": 1,
+      "test_name": "Generate Hexadecimal Color Codes",
+      "test_description": "User navigates to Hex Color Codes generator, submits default form, and verifies color codes are displayed."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 1.9458577632904053,
+      "error_message": "No selector found for target 'element_135'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": "Geographic Coordinates",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.4039418697357178
+        },
+        {
+          "step": 2,
+          "action": "click",
+          "target": "element_135",
+          "value": null,
+          "status": "FAIL",
+          "error": "No selector found for target 'element_135'",
+          "duration": 1.3113021850585938e-05
+        }
+      ],
+      "total_steps": 3,
+      "passed_steps": 1,
+      "test_name": "Generate Geographic Coordinates with Default Parameters",
+      "test_description": "User navigates to Geographic Coordinates generator, submits form, and verifies coordinates are displayed."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 2.565986156463623,
+      "error_message": "No selector found for target 'element_135'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": "Clock Times",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.35474109649658203
+        },
+        {
+          "step": 2,
+          "action": "type",
+          "target": "q",
+          "value": "1",
+          "status": "PASS",
+          "duration": 0.03724789619445801
+        },
+        {
+          "step": 3,
+          "action": "type",
+          "target": "q",
+          "value": "12",
+          "status": "PASS",
+          "duration": 0.048509836196899414
+        },
+        {
+          "step": 4,
+          "action": "click",
+          "target": "element_135",
+          "value": null,
+          "status": "FAIL",
+          "error": "No selector found for target 'element_135'",
+          "duration": 6.723403930664062e-05
+        }
+      ],
+      "total_steps": 5,
+      "passed_steps": 3,
+      "test_name": "Generate Clock Times with Valid Input",
+      "test_description": "User navigates to Clock Times generator, inputs valid parameters, submits, and verifies times are displayed."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 1.9535009860992432,
+      "error_message": "No selector found for target 'element_135'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": "Strings",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.4298889636993408
+        },
+        {
+          "step": 2,
+          "action": "type",
+          "target": "q",
+          "value": "5",
+          "status": "PASS",
+          "duration": 0.03318309783935547
+        },
+        {
+          "step": 3,
+          "action": "click",
+          "target": "element_135",
+          "value": null,
+          "status": "FAIL",
+          "error": "No selector found for target 'element_135'",
+          "duration": 0.00032782554626464844
+        }
+      ],
+      "total_steps": 4,
+      "passed_steps": 2,
+      "test_name": "Generate Strings with Valid Parameters",
+      "test_description": "User navigates to Strings generator, inputs parameters, submits, and verifies generated strings are displayed."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 2.2634427547454834,
+      "error_message": "No selector found for target 'element_135'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": "Passwords",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.6135532855987549
+        },
+        {
+          "step": 2,
+          "action": "type",
+          "target": "q",
+          "value": "8",
+          "status": "PASS",
+          "duration": 0.03227806091308594
+        },
+        {
+          "step": 3,
+          "action": "click",
+          "target": "element_135",
+          "value": null,
+          "status": "FAIL",
+          "error": "No selector found for target 'element_135'",
+          "duration": 6.794929504394531e-05
+        }
+      ],
+      "total_steps": 4,
+      "passed_steps": 2,
+      "test_name": "Generate Passwords with Valid Parameters",
+      "test_description": "User navigates to Passwords generator, inputs parameters, submits, and verifies passwords are displayed."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 1.7480740547180176,
+      "error_message": "No selector found for target 'Lottery Quick Pick'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": "Home",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.40279698371887207
+        },
+        {
+          "step": 2,
+          "action": "click",
+          "target": "Lottery Quick Pick",
+          "value": null,
+          "status": "FAIL",
+          "error": "No selector found for target 'Lottery Quick Pick'",
+          "duration": 1.5735626220703125e-05
+        }
+      ],
+      "total_steps": 3,
+      "passed_steps": 1,
+      "test_name": "Navigation Flow from Home to Lottery Quick Pick",
+      "test_description": "User clicks on Lottery Quick Pick link from home page and verifies navigation to correct URL."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 2.4708502292633057,
+      "error_message": "No selector found for target 'element_135'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": "Integers",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.8891520500183105
+        },
+        {
+          "step": 2,
+          "action": "click",
+          "target": "element_135",
+          "value": null,
+          "status": "FAIL",
+          "error": "No selector found for target 'element_135'",
+          "duration": 1.6927719116210938e-05
+        }
+      ],
+      "total_steps": 3,
+      "passed_steps": 1,
+      "test_name": "Empty Input Validation on Integers Generator",
+      "test_description": "User navigates to Integers generator, submits form with empty inputs, and verifies error message or no results."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 2.778440237045288,
+      "error_message": "No selector found for target 'element_135'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": "Integers",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.5931150913238525
+        },
+        {
+          "step": 2,
+          "action": "type",
+          "target": "q",
+          "value": "10",
+          "status": "PASS",
+          "duration": 0.032801151275634766
+        },
+        {
+          "step": 3,
+          "action": "type",
+          "target": "q",
+          "value": "5",
+          "status": "PASS",
+          "duration": 0.03621721267700195
+        },
+        {
+          "step": 4,
+          "action": "click",
+          "target": "element_135",
+          "value": null,
+          "status": "FAIL",
+          "error": "No selector found for target 'element_135'",
+          "duration": 6.198883056640625e-05
+        }
+      ],
+      "total_steps": 5,
+      "passed_steps": 3,
+      "test_name": "Invalid Range Input on Integers Generator",
+      "test_description": "User inputs invalid min greater than max in Integers generator, submits, and verifies error message is shown."
+    }
+  ]
+}

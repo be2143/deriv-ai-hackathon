@@ -1,0 +1,460 @@
+{
+  "page_url": "https://www.random.org/playing-cards/",
+  "title": "RANDOM.ORG - Playing Card Shuffler",
+  "elements": [
+    {
+      "tag": "input",
+      "role": "button",
+      "type": "submit"
+    },
+    {
+      "tag": "input",
+      "role": "button",
+      "type": "submit"
+    },
+    {
+      "tag": "input",
+      "role": "input",
+      "id": "q",
+      "label": "q",
+      "type": "text"
+    },
+    {
+      "tag": "input",
+      "role": "input",
+      "id": "cards",
+      "label": "cards",
+      "type": "text"
+    },
+    {
+      "tag": "input",
+      "role": "input",
+      "id": "spades",
+      "label": "spades",
+      "type": "checkbox"
+    },
+    {
+      "tag": "input",
+      "role": "input",
+      "id": "hearts",
+      "label": "hearts",
+      "type": "checkbox"
+    },
+    {
+      "tag": "input",
+      "role": "input",
+      "id": "diamonds",
+      "label": "diamonds",
+      "type": "checkbox"
+    },
+    {
+      "tag": "input",
+      "role": "input",
+      "id": "clubs",
+      "label": "clubs",
+      "type": "checkbox"
+    },
+    {
+      "tag": "input",
+      "role": "input",
+      "id": "aces",
+      "label": "aces",
+      "type": "checkbox"
+    },
+    {
+      "tag": "input",
+      "role": "input",
+      "id": "twos",
+      "label": "twos",
+      "type": "checkbox"
+    },
+    {
+      "tag": "input",
+      "role": "input",
+      "id": "threes",
+      "label": "threes",
+      "type": "checkbox"
+    },
+    {
+      "tag": "input",
+      "role": "input",
+      "id": "fours",
+      "label": "fours",
+      "type": "checkbox"
+    },
+    {
+      "tag": "input",
+      "role": "input",
+      "id": "fives",
+      "label": "fives",
+      "type": "checkbox"
+    },
+    {
+      "tag": "input",
+      "role": "input",
+      "id": "sixes",
+      "label": "sixes",
+      "type": "checkbox"
+    },
+    {
+      "tag": "input",
+      "role": "input",
+      "id": "sevens",
+      "label": "sevens",
+      "type": "checkbox"
+    },
+    {
+      "tag": "input",
+      "role": "input",
+      "id": "eights",
+      "label": "eights",
+      "type": "checkbox"
+    },
+    {
+      "tag": "input",
+      "role": "input",
+      "id": "nines",
+      "label": "nines",
+      "type": "checkbox"
+    },
+    {
+      "tag": "input",
+      "role": "input",
+      "id": "tens",
+      "label": "tens",
+      "type": "checkbox"
+    },
+    {
+      "tag": "input",
+      "role": "input",
+      "id": "jacks",
+      "label": "jacks",
+      "type": "checkbox"
+    },
+    {
+      "tag": "input",
+      "role": "input",
+      "id": "queens",
+      "label": "queens",
+      "type": "checkbox"
+    },
+    {
+      "tag": "input",
+      "role": "input",
+      "id": "kings",
+      "label": "kings",
+      "type": "checkbox"
+    },
+    {
+      "tag": "input",
+      "role": "input",
+      "id": "bjoker",
+      "label": "bjoker",
+      "type": "checkbox"
+    },
+    {
+      "tag": "input",
+      "role": "input",
+      "id": "rjoker",
+      "label": "rjoker",
+      "type": "checkbox"
+    },
+    {
+      "tag": "input",
+      "role": "input",
+      "id": "remaining",
+      "label": "remaining",
+      "type": "checkbox"
+    },
+    {
+      "tag": "input",
+      "role": "input",
+      "id": "text",
+      "label": "text",
+      "type": "checkbox"
+    },
+    {
+      "tag": "input",
+      "role": "input",
+      "type": "reset"
+    },
+    {
+      "tag": "a",
+      "role": "link",
+      "label": "Home"
+    },
+    {
+      "tag": "a",
+      "role": "link",
+      "label": "Games"
+    },
+    {
+      "tag": "a",
+      "role": "link",
+      "label": "Numbers"
+    },
+    {
+      "tag": "a",
+      "role": "link",
+      "label": "Lists & More"
+    },
+    {
+      "tag": "a",
+      "role": "link",
+      "label": "Drawings"
+    },
+    {
+      "tag": "a",
+      "role": "link",
+      "label": "Web Tools"
+    },
+    {
+      "tag": "a",
+      "role": "link",
+      "label": "Statistics"
+    },
+    {
+      "tag": "a",
+      "role": "link",
+      "label": "Testimonials"
+    },
+    {
+      "tag": "a",
+      "role": "link",
+      "label": "Learn More"
+    },
+    {
+      "tag": "a",
+      "role": "link",
+      "label": "Login"
+    },
+    {
+      "tag": "a",
+      "role": "link",
+      "label": "John Fitzgibbon"
+    },
+    {
+      "tag": "a",
+      "role": "link",
+      "label": "Twitter"
+    },
+    {
+      "tag": "a",
+      "role": "link",
+      "label": "Mastodon"
+    },
+    {
+      "tag": "a",
+      "role": "link",
+      "label": "Terms and Conditions"
+    },
+    {
+      "tag": "a",
+      "role": "link",
+      "label": "About Us"
+    }
+  ],
+  "forms": [
+    {
+      "action": "https://www.random.org/search",
+      "method": "get",
+      "elements": [
+        {
+          "tag": "input",
+          "role": "input",
+          "id": "q",
+          "label": "q",
+          "type": "text"
+        },
+        {
+          "tag": "input",
+          "role": "input",
+          "type": "submit"
+        }
+      ]
+    },
+    {
+      "action": "https://www.random.org/playing-cards/",
+      "method": "get",
+      "elements": [
+        {
+          "tag": "input",
+          "role": "input",
+          "id": "cards",
+          "label": "cards",
+          "type": "text"
+        },
+        {
+          "tag": "select",
+          "role": "select",
+          "id": "decks",
+          "label": "decks",
+          "type": "select-one"
+        },
+        {
+          "tag": "input",
+          "role": "input",
+          "id": "spades",
+          "label": "spades",
+          "type": "checkbox"
+        },
+        {
+          "tag": "input",
+          "role": "input",
+          "id": "hearts",
+          "label": "hearts",
+          "type": "checkbox"
+        },
+        {
+          "tag": "input",
+          "role": "input",
+          "id": "diamonds",
+          "label": "diamonds",
+          "type": "checkbox"
+        },
+        {
+          "tag": "input",
+          "role": "input",
+          "id": "clubs",
+          "label": "clubs",
+          "type": "checkbox"
+        },
+        {
+          "tag": "input",
+          "role": "input",
+          "id": "aces",
+          "label": "aces",
+          "type": "checkbox"
+        },
+        {
+          "tag": "input",
+          "role": "input",
+          "id": "twos",
+          "label": "twos",
+          "type": "checkbox"
+        },
+        {
+          "tag": "input",
+          "role": "input",
+          "id": "threes",
+          "label": "threes",
+          "type": "checkbox"
+        },
+        {
+          "tag": "input",
+          "role": "input",
+          "id": "fours",
+          "label": "fours",
+          "type": "checkbox"
+        },
+        {
+          "tag": "input",
+          "role": "input",
+          "id": "fives",
+          "label": "fives",
+          "type": "checkbox"
+        },
+        {
+          "tag": "input",
+          "role": "input",
+          "id": "sixes",
+          "label": "sixes",
+          "type": "checkbox"
+        },
+        {
+          "tag": "input",
+          "role": "input",
+          "id": "sevens",
+          "label": "sevens",
+          "type": "checkbox"
+        },
+        {
+          "tag": "input",
+          "role": "input",
+          "id": "eights",
+          "label": "eights",
+          "type": "checkbox"
+        },
+        {
+          "tag": "input",
+          "role": "input",
+          "id": "nines",
+          "label": "nines",
+          "type": "checkbox"
+        },
+        {
+          "tag": "input",
+          "role": "input",
+          "id": "tens",
+          "label": "tens",
+          "type": "checkbox"
+        },
+        {
+          "tag": "input",
+          "role": "input",
+          "id": "jacks",
+          "label": "jacks",
+          "type": "checkbox"
+        },
+        {
+          "tag": "input",
+          "role": "input",
+          "id": "queens",
+          "label": "queens",
+          "type": "checkbox"
+        },
+        {
+          "tag": "input",
+          "role": "input",
+          "id": "kings",
+          "label": "kings",
+          "type": "checkbox"
+        },
+        {
+          "tag": "input",
+          "role": "input",
+          "id": "bjoker",
+          "label": "bjoker",
+          "type": "checkbox"
+        },
+        {
+          "tag": "input",
+          "role": "input",
+          "id": "rjoker",
+          "label": "rjoker",
+          "type": "checkbox"
+        },
+        {
+          "tag": "input",
+          "role": "input",
+          "id": "remaining",
+          "label": "remaining",
+          "type": "checkbox"
+        },
+        {
+          "tag": "input",
+          "role": "input",
+          "id": "text",
+          "label": "text",
+          "type": "checkbox"
+        },
+        {
+          "tag": "input",
+          "role": "input",
+          "type": "submit"
+        },
+        {
+          "tag": "input",
+          "role": "input",
+          "type": "reset"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_elements_found": 100,
+    "testable_elements": 41,
+    "total_pages_crawled": 10,
+    "pages_included": 1
+  }
+}

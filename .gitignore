@@ -3,6 +3,13 @@ server/crawl_results_*.json
 server/*.json
 !server/package.json
 py310/
+/venv/
+venv/
+.env
+.env.local
+__pycache__/
+*.pyc
+.DS_Store
 /env/
 /env.local
 /env.development.local

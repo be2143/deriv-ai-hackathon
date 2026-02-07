@@ -1,0 +1,80 @@
+{
+  "generated_at": "2026-02-07T12:41:39.163078",
+  "page_url": "https://www.random.org/#/",
+  "total_test_cases": 3,
+  "test_cases": [
+    {
+      "test_name": "Verify Home Page Loads with Main Heading Visible",
+      "description": "Navigate to the home page and verify the main heading is visible and correct.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/#/"
+        },
+        {
+          "action": "assert_visible",
+          "target": "#invisible > h1",
+          "value": null
+        },
+        {
+          "action": "assert_text",
+          "target": "#invisible > h1",
+          "value": "True Random Number Service"
+        }
+      ]
+    },
+    {
+      "test_name": "Search Functionality with Valid Query",
+      "description": "Enter a valid search query and submit the search form, then verify URL contains the query parameter.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/#/"
+        },
+        {
+          "action": "type",
+          "target": "#search",
+          "value": "random integer"
+        },
+        {
+          "action": "click",
+          "target": "#search > form > div > input:nth-of-type(2)",
+          "value": null
+        },
+        {
+          "action": "assert_url_contains",
+          "target": null,
+          "value": "q=random+integer"
+        }
+      ]
+    },
+    {
+      "test_name": "Cookie Banner Necessary Checkbox Interaction",
+      "description": "Verify the cookie banner necessary checkbox is visible and can be toggled.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/#/"
+        },
+        {
+          "action": "assert_visible",
+          "target": "#cookie-banner-necessary",
+          "value": null
+        },
+        {
+          "action": "click",
+          "target": "#cookie-banner-necessary",
+          "value": null
+        },
+        {
+          "action": "assert_disabled",
+          "target": "#cookie-banner-necessary",
+          "value": null
+        }
+      ]
+    }
+  ]
+}

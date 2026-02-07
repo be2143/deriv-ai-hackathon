@@ -1,0 +1,303 @@
+{
+  "url": "https://www.random.org/",
+  "executed_at": "2026-02-07T13:17:36.444527",
+  "total_tests": 10,
+  "passed": 0,
+  "failed": 10,
+  "results": [
+    {
+      "status": "FAIL",
+      "execution_time": 3.1859939098358154,
+      "error_message": "Expected '/account/' in URL 'https://accounts.random.org/'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/account/",
+          "status": "PASS",
+          "duration": 0.6169159412384033
+        },
+        {
+          "step": 2,
+          "action": "assert_url_contains",
+          "target": null,
+          "value": "/account/",
+          "status": "FAIL",
+          "error": "Expected '/account/' in URL 'https://accounts.random.org/'",
+          "duration": 0.0033147335052490234
+        }
+      ],
+      "total_steps": 3,
+      "passed_steps": 1,
+      "test_name": "Navigate to Login Page"
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 6.997604131698608,
+      "error_message": "Message: element not interactable\n  (Session info: chrome=144.0.7559.133)\nStacktrace:\n0   chromedriver                        0x0000000100d1b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100d13c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x00000001007f6640 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74500\n3   chromedriver                        0x0000000100837a08 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 341708\n4   chromedriver                        0x000000010083573c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 332800\n5   chromedriver                        0x000000010087efe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n6   chromedriver                        0x000000010083407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n7   chromedriver                        0x0000000100cda884 cxxbridge1$str$ptr + 2831984\n8   chromedriver                        0x0000000100cddfcc cxxbridge1$str$ptr + 2846136\n9   chromedriver                        0x0000000100cbf578 cxxbridge1$str$ptr + 2720612\n10  chromedriver                        0x0000000100cde850 cxxbridge1$str$ptr + 2848316\n11  chromedriver                        0x0000000100caf640 cxxbridge1$str$ptr + 2655276\n12  chromedriver                        0x0000000100d02194 cxxbridge1$str$ptr + 2994048\n13  chromedriver                        0x0000000100d02310 cxxbridge1$str$ptr + 2994428\n14  chromedriver                        0x0000000100d1385c cxxbridge1$str$ptr + 3065416\n15  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n16  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/account/",
+          "status": "PASS",
+          "duration": 0.34382200241088867
+        },
+        {
+          "step": 2,
+          "action": "type",
+          "target": "q",
+          "value": "validuser@example.com",
+          "status": "FAIL",
+          "error": "Message: element not interactable\n  (Session info: chrome=144.0.7559.133)\nStacktrace:\n0   chromedriver                        0x0000000100d1b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100d13c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x00000001007f6640 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74500\n3   chromedriver                        0x0000000100837a08 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 341708\n4   chromedriver                        0x000000010083573c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 332800\n5   chromedriver                        0x000000010087efe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n6   chromedriver                        0x000000010083407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n7   chromedriver                        0x0000000100cda884 cxxbridge1$str$ptr + 2831984\n8   chromedriver                        0x0000000100cddfcc cxxbridge1$str$ptr + 2846136\n9   chromedriver                        0x0000000100cbf578 cxxbridge1$str$ptr + 2720612\n10  chromedriver                        0x0000000100cde850 cxxbridge1$str$ptr + 2848316\n11  chromedriver                        0x0000000100caf640 cxxbridge1$str$ptr + 2655276\n12  chromedriver                        0x0000000100d02194 cxxbridge1$str$ptr + 2994048\n13  chromedriver                        0x0000000100d02310 cxxbridge1$str$ptr + 2994428\n14  chromedriver                        0x0000000100d1385c cxxbridge1$str$ptr + 3065416\n15  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n16  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+          "duration": 5.0508599281311035
+        }
+      ],
+      "total_steps": 5,
+      "passed_steps": 1,
+      "test_name": "Successful Login with Valid Credentials"
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 6.705047845840454,
+      "error_message": "Message: element not interactable\n  (Session info: chrome=144.0.7559.133)\nStacktrace:\n0   chromedriver                        0x0000000100d1b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100d13c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x00000001007f6640 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74500\n3   chromedriver                        0x0000000100837a08 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 341708\n4   chromedriver                        0x000000010083573c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 332800\n5   chromedriver                        0x000000010087efe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n6   chromedriver                        0x000000010083407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n7   chromedriver                        0x0000000100cda884 cxxbridge1$str$ptr + 2831984\n8   chromedriver                        0x0000000100cddfcc cxxbridge1$str$ptr + 2846136\n9   chromedriver                        0x0000000100cbf578 cxxbridge1$str$ptr + 2720612\n10  chromedriver                        0x0000000100cde850 cxxbridge1$str$ptr + 2848316\n11  chromedriver                        0x0000000100caf640 cxxbridge1$str$ptr + 2655276\n12  chromedriver                        0x0000000100d02194 cxxbridge1$str$ptr + 2994048\n13  chromedriver                        0x0000000100d02310 cxxbridge1$str$ptr + 2994428\n14  chromedriver                        0x0000000100d1385c cxxbridge1$str$ptr + 3065416\n15  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n16  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/account/",
+          "status": "PASS",
+          "duration": 0.1897749900817871
+        },
+        {
+          "step": 2,
+          "action": "type",
+          "target": "q",
+          "value": "",
+          "status": "FAIL",
+          "error": "Message: element not interactable\n  (Session info: chrome=144.0.7559.133)\nStacktrace:\n0   chromedriver                        0x0000000100d1b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100d13c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x00000001007f6640 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74500\n3   chromedriver                        0x0000000100837a08 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 341708\n4   chromedriver                        0x000000010083573c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 332800\n5   chromedriver                        0x000000010087efe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n6   chromedriver                        0x000000010083407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n7   chromedriver                        0x0000000100cda884 cxxbridge1$str$ptr + 2831984\n8   chromedriver                        0x0000000100cddfcc cxxbridge1$str$ptr + 2846136\n9   chromedriver                        0x0000000100cbf578 cxxbridge1$str$ptr + 2720612\n10  chromedriver                        0x0000000100cde850 cxxbridge1$str$ptr + 2848316\n11  chromedriver                        0x0000000100caf640 cxxbridge1$str$ptr + 2655276\n12  chromedriver                        0x0000000100d02194 cxxbridge1$str$ptr + 2994048\n13  chromedriver                        0x0000000100d02310 cxxbridge1$str$ptr + 2994428\n14  chromedriver                        0x0000000100d1385c cxxbridge1$str$ptr + 3065416\n15  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n16  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+          "duration": 5.033390283584595
+        }
+      ],
+      "total_steps": 5,
+      "passed_steps": 1,
+      "test_name": "Login Attempt with Empty Email and Password"
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 6.626288890838623,
+      "error_message": "Message: element not interactable\n  (Session info: chrome=144.0.7559.133)\nStacktrace:\n0   chromedriver                        0x0000000100d1b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100d13c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x00000001007f6640 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74500\n3   chromedriver                        0x0000000100837a08 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 341708\n4   chromedriver                        0x000000010083573c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 332800\n5   chromedriver                        0x000000010087efe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n6   chromedriver                        0x000000010083407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n7   chromedriver                        0x0000000100cda884 cxxbridge1$str$ptr + 2831984\n8   chromedriver                        0x0000000100cddfcc cxxbridge1$str$ptr + 2846136\n9   chromedriver                        0x0000000100cbf578 cxxbridge1$str$ptr + 2720612\n10  chromedriver                        0x0000000100cde850 cxxbridge1$str$ptr + 2848316\n11  chromedriver                        0x0000000100caf640 cxxbridge1$str$ptr + 2655276\n12  chromedriver                        0x0000000100d02194 cxxbridge1$str$ptr + 2994048\n13  chromedriver                        0x0000000100d02310 cxxbridge1$str$ptr + 2994428\n14  chromedriver                        0x0000000100d1385c cxxbridge1$str$ptr + 3065416\n15  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n16  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/account/",
+          "status": "PASS",
+          "duration": 0.2103443145751953
+        },
+        {
+          "step": 2,
+          "action": "type",
+          "target": "q",
+          "value": "invalid-email-format",
+          "status": "FAIL",
+          "error": "Message: element not interactable\n  (Session info: chrome=144.0.7559.133)\nStacktrace:\n0   chromedriver                        0x0000000100d1b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100d13c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x00000001007f6640 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74500\n3   chromedriver                        0x0000000100837a08 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 341708\n4   chromedriver                        0x000000010083573c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 332800\n5   chromedriver                        0x000000010087efe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n6   chromedriver                        0x000000010083407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n7   chromedriver                        0x0000000100cda884 cxxbridge1$str$ptr + 2831984\n8   chromedriver                        0x0000000100cddfcc cxxbridge1$str$ptr + 2846136\n9   chromedriver                        0x0000000100cbf578 cxxbridge1$str$ptr + 2720612\n10  chromedriver                        0x0000000100cde850 cxxbridge1$str$ptr + 2848316\n11  chromedriver                        0x0000000100caf640 cxxbridge1$str$ptr + 2655276\n12  chromedriver                        0x0000000100d02194 cxxbridge1$str$ptr + 2994048\n13  chromedriver                        0x0000000100d02310 cxxbridge1$str$ptr + 2994428\n14  chromedriver                        0x0000000100d1385c cxxbridge1$str$ptr + 3065416\n15  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n16  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+          "duration": 5.030502080917358
+        }
+      ],
+      "total_steps": 5,
+      "passed_steps": 1,
+      "test_name": "Login Attempt with Invalid Email Format"
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 6.726947069168091,
+      "error_message": "Message: element not interactable\n  (Session info: chrome=144.0.7559.133)\nStacktrace:\n0   chromedriver                        0x0000000100d1b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100d13c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x00000001007f6640 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74500\n3   chromedriver                        0x0000000100837a08 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 341708\n4   chromedriver                        0x000000010083573c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 332800\n5   chromedriver                        0x000000010087efe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n6   chromedriver                        0x000000010083407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n7   chromedriver                        0x0000000100cda884 cxxbridge1$str$ptr + 2831984\n8   chromedriver                        0x0000000100cddfcc cxxbridge1$str$ptr + 2846136\n9   chromedriver                        0x0000000100cbf578 cxxbridge1$str$ptr + 2720612\n10  chromedriver                        0x0000000100cde850 cxxbridge1$str$ptr + 2848316\n11  chromedriver                        0x0000000100caf640 cxxbridge1$str$ptr + 2655276\n12  chromedriver                        0x0000000100d02194 cxxbridge1$str$ptr + 2994048\n13  chromedriver                        0x0000000100d02310 cxxbridge1$str$ptr + 2994428\n14  chromedriver                        0x0000000100d1385c cxxbridge1$str$ptr + 3065416\n15  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n16  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/account/",
+          "status": "PASS",
+          "duration": 0.2720909118652344
+        },
+        {
+          "step": 2,
+          "action": "type",
+          "target": "q",
+          "value": "validuser@example.com",
+          "status": "FAIL",
+          "error": "Message: element not interactable\n  (Session info: chrome=144.0.7559.133)\nStacktrace:\n0   chromedriver                        0x0000000100d1b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100d13c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x00000001007f6640 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74500\n3   chromedriver                        0x0000000100837a08 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 341708\n4   chromedriver                        0x000000010083573c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 332800\n5   chromedriver                        0x000000010087efe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n6   chromedriver                        0x000000010083407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n7   chromedriver                        0x0000000100cda884 cxxbridge1$str$ptr + 2831984\n8   chromedriver                        0x0000000100cddfcc cxxbridge1$str$ptr + 2846136\n9   chromedriver                        0x0000000100cbf578 cxxbridge1$str$ptr + 2720612\n10  chromedriver                        0x0000000100cde850 cxxbridge1$str$ptr + 2848316\n11  chromedriver                        0x0000000100caf640 cxxbridge1$str$ptr + 2655276\n12  chromedriver                        0x0000000100d02194 cxxbridge1$str$ptr + 2994048\n13  chromedriver                        0x0000000100d02310 cxxbridge1$str$ptr + 2994428\n14  chromedriver                        0x0000000100d1385c cxxbridge1$str$ptr + 3065416\n15  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n16  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+          "duration": 5.070511102676392
+        }
+      ],
+      "total_steps": 5,
+      "passed_steps": 1,
+      "test_name": "Login Attempt with Incorrect Password"
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 6.601456165313721,
+      "error_message": "Message: element not interactable\n  (Session info: chrome=144.0.7559.133)\nStacktrace:\n0   chromedriver                        0x0000000100d1b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100d13c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x00000001007f6640 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74500\n3   chromedriver                        0x0000000100837a08 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 341708\n4   chromedriver                        0x000000010083573c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 332800\n5   chromedriver                        0x000000010087efe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n6   chromedriver                        0x000000010083407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n7   chromedriver                        0x0000000100cda884 cxxbridge1$str$ptr + 2831984\n8   chromedriver                        0x0000000100cddfcc cxxbridge1$str$ptr + 2846136\n9   chromedriver                        0x0000000100cbf578 cxxbridge1$str$ptr + 2720612\n10  chromedriver                        0x0000000100cde850 cxxbridge1$str$ptr + 2848316\n11  chromedriver                        0x0000000100caf640 cxxbridge1$str$ptr + 2655276\n12  chromedriver                        0x0000000100d02194 cxxbridge1$str$ptr + 2994048\n13  chromedriver                        0x0000000100d02310 cxxbridge1$str$ptr + 2994428\n14  chromedriver                        0x0000000100d1385c cxxbridge1$str$ptr + 3065416\n15  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n16  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/account/",
+          "status": "PASS",
+          "duration": 0.20761513710021973
+        },
+        {
+          "step": 2,
+          "action": "type",
+          "target": "q",
+          "value": "verylongemailaddress_exceeding_normal_length_limits@example.comverylongemailaddress_exceeding_normal_length_limits@example.com",
+          "status": "FAIL",
+          "error": "Message: element not interactable\n  (Session info: chrome=144.0.7559.133)\nStacktrace:\n0   chromedriver                        0x0000000100d1b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100d13c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x00000001007f6640 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74500\n3   chromedriver                        0x0000000100837a08 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 341708\n4   chromedriver                        0x000000010083573c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 332800\n5   chromedriver                        0x000000010087efe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n6   chromedriver                        0x000000010083407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n7   chromedriver                        0x0000000100cda884 cxxbridge1$str$ptr + 2831984\n8   chromedriver                        0x0000000100cddfcc cxxbridge1$str$ptr + 2846136\n9   chromedriver                        0x0000000100cbf578 cxxbridge1$str$ptr + 2720612\n10  chromedriver                        0x0000000100cde850 cxxbridge1$str$ptr + 2848316\n11  chromedriver                        0x0000000100caf640 cxxbridge1$str$ptr + 2655276\n12  chromedriver                        0x0000000100d02194 cxxbridge1$str$ptr + 2994048\n13  chromedriver                        0x0000000100d02310 cxxbridge1$str$ptr + 2994428\n14  chromedriver                        0x0000000100d1385c cxxbridge1$str$ptr + 3065416\n15  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n16  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+          "duration": 5.017492055892944
+        }
+      ],
+      "total_steps": 5,
+      "passed_steps": 1,
+      "test_name": "Login Attempt with Excessively Long Email Input"
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 6.6574931144714355,
+      "error_message": "Message: element not interactable\n  (Session info: chrome=144.0.7559.133)\nStacktrace:\n0   chromedriver                        0x0000000100d1b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100d13c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x00000001007f6640 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74500\n3   chromedriver                        0x0000000100837a08 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 341708\n4   chromedriver                        0x000000010083573c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 332800\n5   chromedriver                        0x000000010087efe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n6   chromedriver                        0x000000010083407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n7   chromedriver                        0x0000000100cda884 cxxbridge1$str$ptr + 2831984\n8   chromedriver                        0x0000000100cddfcc cxxbridge1$str$ptr + 2846136\n9   chromedriver                        0x0000000100cbf578 cxxbridge1$str$ptr + 2720612\n10  chromedriver                        0x0000000100cde850 cxxbridge1$str$ptr + 2848316\n11  chromedriver                        0x0000000100caf640 cxxbridge1$str$ptr + 2655276\n12  chromedriver                        0x0000000100d02194 cxxbridge1$str$ptr + 2994048\n13  chromedriver                        0x0000000100d02310 cxxbridge1$str$ptr + 2994428\n14  chromedriver                        0x0000000100d1385c cxxbridge1$str$ptr + 3065416\n15  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n16  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/account/",
+          "status": "PASS",
+          "duration": 0.21419477462768555
+        },
+        {
+          "step": 2,
+          "action": "type",
+          "target": "q",
+          "value": "'; DROP TABLE users; --",
+          "status": "FAIL",
+          "error": "Message: element not interactable\n  (Session info: chrome=144.0.7559.133)\nStacktrace:\n0   chromedriver                        0x0000000100d1b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100d13c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x00000001007f6640 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74500\n3   chromedriver                        0x0000000100837a08 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 341708\n4   chromedriver                        0x000000010083573c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 332800\n5   chromedriver                        0x000000010087efe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n6   chromedriver                        0x000000010083407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n7   chromedriver                        0x0000000100cda884 cxxbridge1$str$ptr + 2831984\n8   chromedriver                        0x0000000100cddfcc cxxbridge1$str$ptr + 2846136\n9   chromedriver                        0x0000000100cbf578 cxxbridge1$str$ptr + 2720612\n10  chromedriver                        0x0000000100cde850 cxxbridge1$str$ptr + 2848316\n11  chromedriver                        0x0000000100caf640 cxxbridge1$str$ptr + 2655276\n12  chromedriver                        0x0000000100d02194 cxxbridge1$str$ptr + 2994048\n13  chromedriver                        0x0000000100d02310 cxxbridge1$str$ptr + 2994428\n14  chromedriver                        0x0000000100d1385c cxxbridge1$str$ptr + 3065416\n15  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n16  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+          "duration": 5.068189859390259
+        }
+      ],
+      "total_steps": 5,
+      "passed_steps": 1,
+      "test_name": "Login Attempt with SQL Injection String in Email"
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 6.650195121765137,
+      "error_message": "Message: element not interactable\n  (Session info: chrome=144.0.7559.133)\nStacktrace:\n0   chromedriver                        0x0000000100d1b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100d13c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x00000001007f6640 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74500\n3   chromedriver                        0x0000000100837a08 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 341708\n4   chromedriver                        0x000000010083573c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 332800\n5   chromedriver                        0x000000010087efe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n6   chromedriver                        0x000000010083407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n7   chromedriver                        0x0000000100cda884 cxxbridge1$str$ptr + 2831984\n8   chromedriver                        0x0000000100cddfcc cxxbridge1$str$ptr + 2846136\n9   chromedriver                        0x0000000100cbf578 cxxbridge1$str$ptr + 2720612\n10  chromedriver                        0x0000000100cde850 cxxbridge1$str$ptr + 2848316\n11  chromedriver                        0x0000000100caf640 cxxbridge1$str$ptr + 2655276\n12  chromedriver                        0x0000000100d02194 cxxbridge1$str$ptr + 2994048\n13  chromedriver                        0x0000000100d02310 cxxbridge1$str$ptr + 2994428\n14  chromedriver                        0x0000000100d1385c cxxbridge1$str$ptr + 3065416\n15  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n16  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/account/",
+          "status": "PASS",
+          "duration": 0.22850990295410156
+        },
+        {
+          "step": 2,
+          "action": "type",
+          "target": "q",
+          "value": "validuser@example.com",
+          "status": "FAIL",
+          "error": "Message: element not interactable\n  (Session info: chrome=144.0.7559.133)\nStacktrace:\n0   chromedriver                        0x0000000100d1b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100d13c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x00000001007f6640 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74500\n3   chromedriver                        0x0000000100837a08 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 341708\n4   chromedriver                        0x000000010083573c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 332800\n5   chromedriver                        0x000000010087efe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n6   chromedriver                        0x000000010083407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n7   chromedriver                        0x0000000100cda884 cxxbridge1$str$ptr + 2831984\n8   chromedriver                        0x0000000100cddfcc cxxbridge1$str$ptr + 2846136\n9   chromedriver                        0x0000000100cbf578 cxxbridge1$str$ptr + 2720612\n10  chromedriver                        0x0000000100cde850 cxxbridge1$str$ptr + 2848316\n11  chromedriver                        0x0000000100caf640 cxxbridge1$str$ptr + 2655276\n12  chromedriver                        0x0000000100d02194 cxxbridge1$str$ptr + 2994048\n13  chromedriver                        0x0000000100d02310 cxxbridge1$str$ptr + 2994428\n14  chromedriver                        0x0000000100d1385c cxxbridge1$str$ptr + 3065416\n15  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n16  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+          "duration": 5.059484958648682
+        }
+      ],
+      "total_steps": 5,
+      "passed_steps": 1,
+      "test_name": "Login Attempt with SQL Injection String in Password"
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 19.480649948120117,
+      "error_message": "Message: \nStacktrace:\n0   chromedriver                        0x0000000100d1b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100d13c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x00000001007f683c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75008\n3   chromedriver                        0x000000010083fd7c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375360\n4   chromedriver                        0x000000010087efe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n5   chromedriver                        0x000000010083407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n6   chromedriver                        0x0000000100cda884 cxxbridge1$str$ptr + 2831984\n7   chromedriver                        0x0000000100cddfcc cxxbridge1$str$ptr + 2846136\n8   chromedriver                        0x0000000100cbf578 cxxbridge1$str$ptr + 2720612\n9   chromedriver                        0x0000000100cde850 cxxbridge1$str$ptr + 2848316\n10  chromedriver                        0x0000000100caf640 cxxbridge1$str$ptr + 2655276\n11  chromedriver                        0x0000000100d02194 cxxbridge1$str$ptr + 2994048\n12  chromedriver                        0x0000000100d02310 cxxbridge1$str$ptr + 2994428\n13  chromedriver                        0x0000000100d1385c cxxbridge1$str$ptr + 3065416\n14  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n15  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/",
+          "status": "PASS",
+          "duration": 0.5581281185150146
+        },
+        {
+          "step": 2,
+          "action": "click",
+          "target": "Coin Flipper",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.34168410301208496
+        },
+        {
+          "step": 3,
+          "action": "assert_url_contains",
+          "target": null,
+          "value": "/coins/",
+          "status": "PASS",
+          "duration": 0.015552043914794922
+        },
+        {
+          "step": 4,
+          "action": "click",
+          "target": "Dice Roller",
+          "value": null,
+          "status": "FAIL",
+          "error": "Message: \nStacktrace:\n0   chromedriver                        0x0000000100d1b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100d13c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x00000001007f683c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75008\n3   chromedriver                        0x000000010083fd7c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375360\n4   chromedriver                        0x000000010087efe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n5   chromedriver                        0x000000010083407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n6   chromedriver                        0x0000000100cda884 cxxbridge1$str$ptr + 2831984\n7   chromedriver                        0x0000000100cddfcc cxxbridge1$str$ptr + 2846136\n8   chromedriver                        0x0000000100cbf578 cxxbridge1$str$ptr + 2720612\n9   chromedriver                        0x0000000100cde850 cxxbridge1$str$ptr + 2848316\n10  chromedriver                        0x0000000100caf640 cxxbridge1$str$ptr + 2655276\n11  chromedriver                        0x0000000100d02194 cxxbridge1$str$ptr + 2994048\n12  chromedriver                        0x0000000100d02310 cxxbridge1$str$ptr + 2994428\n13  chromedriver                        0x0000000100d1385c cxxbridge1$str$ptr + 3065416\n14  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n15  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+          "duration": 16.574320077896118
+        }
+      ],
+      "total_steps": 7,
+      "passed_steps": 3,
+      "test_name": "Navigation to Various Tools from Main Page"
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 17.44225025177002,
+      "error_message": "Message: \n",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/",
+          "status": "PASS",
+          "duration": 0.41636204719543457
+        },
+        {
+          "step": 2,
+          "action": "assert_visible",
+          "target": "cookie-banner-necessary",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.012681961059570312
+        },
+        {
+          "step": 3,
+          "action": "click",
+          "target": "cookie-banner-necessary",
+          "value": null,
+          "status": "FAIL",
+          "error": "Message: \n",
+          "duration": 15.273641109466553
+        }
+      ],
+      "total_steps": 4,
+      "passed_steps": 2,
+      "test_name": "Cookie Banner Interaction"
+    }
+  ]
+}

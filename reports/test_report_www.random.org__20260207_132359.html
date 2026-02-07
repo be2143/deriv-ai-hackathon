@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Report - https://www.random.org/</title>
+  <style>
+    body { font-family: system-ui,sans-serif; margin: 24px; background: #f9fafb; }
+    h1 { font-size: 20px; }
+    table { border-collapse: collapse; width: 100%; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+    th, td { padding: 12px 14px; text-align: left; border-bottom: 1px solid #e5e7eb; }
+    th { background: #f3f4f6; font-weight: 600; }
+    .badge { padding: 4px 8px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+    .badge.pass { background: #dcfce7; color: #166534; }
+    .badge.fail { background: #fee2e2; color: #b91c1c; }
+    .meta { color: #6b7280; font-size: 14px; margin-bottom: 16px; }
+  </style>
+</head>
+<body>
+  <h1>Test execution report</h1>
+  <p class="meta">URL: https://www.random.org/ · 9 tests · 2 passed, 7 failed</p>
+  <table>
+    <thead><tr><th>Test</th><th>Status</th><th>Time</th><th>Error</th></tr></thead>
+    <tbody>
+    
+        <tr>
+          <td>Navigate to Login Page</td>
+          <td><span class="badge fail">FAIL</span></td>
+          <td>2.83s</td>
+          <td>Expected '/account/' in URL 'https://accounts.random.org/'</td>
+        </tr>
+
+        <tr>
+          <td>Successful Login with Valid Credentials</td>
+          <td><span class="badge fail">FAIL</span></td>
+          <td>6.66s</td>
+          <td>Message: element not interactable
+  (Session info: chrome=144.0.7559.133)
+Stacktrace:
+0   chromedriver                        0x000000010466b928 cxxbridge1$str$ptr + 3098388
+1   chromedriver          </td>
+        </tr>
+
+        <tr>
+          <td>Navigation to Various Tools from Homepage</td>
+          <td><span class="badge fail">FAIL</span></td>
+          <td>19.24s</td>
+          <td>Message: 
+Stacktrace:
+0   chromedriver                        0x000000010466b928 cxxbridge1$str$ptr + 3098388
+1   chromedriver                        0x0000000104663c04 cxxbridge1$str$ptr + 3066352
+2 </td>
+        </tr>
+
+        <tr>
+          <td>Cookie Banner Interaction</td>
+          <td><span class="badge fail">FAIL</span></td>
+          <td>18.25s</td>
+          <td>Message: 
+</td>
+        </tr>
+
+        <tr>
+          <td>Search Functionality with Empty Input</td>
+          <td><span class="badge fail">FAIL</span></td>
+          <td>3.56s</td>
+          <td>Message: element click intercepted: Element <input type="text" name="q" size="16"> is not clickable at point (1212, 75). Other element would receive the click: <div style="margin: 0px 16px 16px 16px"></td>
+        </tr>
+
+        <tr>
+          <td>Search Functionality with Valid Input</td>
+          <td><span class="badge fail">FAIL</span></td>
+          <td>3.24s</td>
+          <td>Message: element click intercepted: Element <input type="text" name="q" size="16"> is not clickable at point (1212, 75). Other element would receive the click: <div style="margin: 0px 16px 16px 16px"></td>
+        </tr>
+
+        <tr>
+          <td>Verify Presence of Main Navigation Links</td>
+          <td><span class="badge pass">PASS</span></td>
+          <td>3.37s</td>
+          <td>—</td>
+        </tr>
+
+        <tr>
+          <td>Accessing About & Contact Page</td>
+          <td><span class="badge fail">FAIL</span></td>
+          <td>16.92s</td>
+          <td>Message: 
+</td>
+        </tr>
+
+        <tr>
+          <td>Verify Footer Links Visibility</td>
+          <td><span class="badge pass">PASS</span></td>
+          <td>2.69s</td>
+          <td>—</td>
+        </tr>
+    </tbody>
+  </table>
+</body>
+</html>

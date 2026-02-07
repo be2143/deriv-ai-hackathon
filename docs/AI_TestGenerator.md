@@ -1,24 +1,18 @@
-Perfect timing — prompt design is critical here because your AI is operating as a reasoning engine with strict output contracts. Below is a production-grade prompt template set you can actually use, fine-tune on, and defend.
+# AI Prompt Templates
 
-I’ll give you:
-	1.	System prompt
-	2.	Developer / Instruction prompt
-	3.	User input prompt
-	4.	Schema-enforcement & retry prompt
-	5.	Negative / edge-case prompt
+## UI Test Specification Generator
 
-⸻
+LangChain LLM Chain
+  - PromptTemplate (System + Developer + User)
+  - OutputParser (JSON schema)
+  - Validator (Allowed actions)
 
-AI Prompt Templates
-
-UI Test Specification Generator
-
-⸻
 
 1. System Prompt (Role & Constraints)
 
 This is the most important prompt. It defines identity, scope, and hard boundaries.
 
+```
 You are a senior QA automation engineer specializing in frontend UI and UX testing.
 You deeply understand the capabilities and limitations of Selenium-based browser automation (e.g. what can or cannot be asserted reliably, typical flakiness causes, and how real browsers behave).
 
@@ -34,13 +28,14 @@ You ONLY output valid JSON that conforms to the provided schema.
 You reason about WHAT to test, not HOW to implement it, but your choices must be realistic for Selenium-based UI automation (no impossible actions, no assertions that require information a browser cannot observe).
 Your output must be deterministic, concise, and directly testable.
 
-
+``` 
 ⸻
 
 2. Developer Prompt (Rules & Output Contract)
 
 This prompt enforces schema adherence and behavior.
 
+```
 Follow these rules strictly:
 
 1. Output must be valid JSON and nothing else.
@@ -62,13 +57,14 @@ Follow these rules strictly:
 
 If requirements are ambiguous, choose the most common UX pattern.
 
-
+```
 ⸻
 
 3. User Prompt Template (Main Input)
 
 This is dynamically constructed by your backend.
 
+```
 UI CONTEXT:
 {ui_context_json}
 
@@ -96,7 +92,7 @@ Output must follow this JSON schema:
     }
   ]
 }
-
+```
 
 ⸻
 
@@ -104,6 +100,7 @@ Output must follow this JSON schema:
 
 This is what the model actually sees 👇
 
+```
 UI CONTEXT:
 {
   "page": "/login",
@@ -125,12 +122,13 @@ USER FLOW CONTEXT:
 Standard login flow.
 
 Generate a complete UI test specification that validates the main user flow.
-
+```
 
 ⸻
 
 5. Example AI Output (Correct)
 
+```
 {
   "test_name": "Successful user login",
   "description": "Verify that a user can log in with valid credentials and reach the dashboard",
@@ -143,13 +141,14 @@ Generate a complete UI test specification that validates the main user flow.
   ]
 }
 
-
+```
 ⸻
 
 6. Schema Validation & Retry Prompt
 
 If the AI output fails schema validation, you retry with this prompt.
 
+```
 The previous output was invalid.
 
 Errors:
@@ -162,6 +161,7 @@ Correct the output so that:
 - It references only elements from the UI context
 
 Return ONLY the corrected JSON.
+```
 
 This dramatically improves reliability.
 
@@ -171,6 +171,7 @@ This dramatically improves reliability.
 
 Used when explicitly requested.
 
+```
 Generate a negative UI test specification for the following scenario:
 
 Scenario:
@@ -194,7 +195,7 @@ Example Output
     { "action": "assert_visible", "target": "error_message" }
   ]
 }
-
+```
 
 ⸻
 

@@ -92,9 +92,45 @@ def extract_text_from_markdown(file_path: str) -> str:
     try:
         with open(file_path, "r", encoding="utf-8") as f:
             md_content = f.read()
-        html = markdown.markdown(md_content)
-        soup = BeautifulSoup(html, "html.parser")
-        return soup.get_text(separator="\n\n")
+        
+        if not md_content.strip():
+            raise ValueError("Markdown file is empty")
+        
+        # Try markdown to HTML conversion first
+        try:
+            html = markdown.markdown(md_content, extensions=['extra', 'nl2br'])
+            soup = BeautifulSoup(html, "html.parser")
+            text = soup.get_text(separator="\n\n")
+            
+            # If we got meaningful text, return it
+            if text.strip() and len(text.strip()) > 50:
+                return text.strip()
+        except Exception:
+            # If markdown conversion fails, fall through to cleanup
+            pass
+        
+        # Fallback: Clean markdown directly (preserve structure, remove syntax)
+        text = md_content
+        
+        # Remove markdown link syntax but keep text: [text](url) -> text
+        text = re.sub(r'\[([^\]]+)\]\([^\)]+\)', r'\1', text)
+        # Remove markdown image syntax: ![alt](url) -> alt
+        text = re.sub(r'!\[([^\]]*)\]\([^\)]+\)', r'\1', text)
+        # Remove markdown code blocks but keep content
+        text = re.sub(r'```[\s\S]*?```', '', text)
+        text = re.sub(r'`([^`]+)`', r'\1', text)
+        # Remove markdown bold/italic but keep text
+        text = re.sub(r'\*\*([^\*]+)\*\*', r'\1', text)
+        text = re.sub(r'\*([^\*]+)\*', r'\1', text)
+        text = re.sub(r'__([^_]+)__', r'\1', text)
+        text = re.sub(r'_([^_]+)_', r'\1', text)
+        # Remove citation markers like [oai_citation:0‡Wikipedia]
+        text = re.sub(r'\[oai_citation:\d+[^\]]+\]', '', text)
+        # Clean up excessive whitespace
+        text = re.sub(r'\n{3,}', '\n\n', text)
+        text = re.sub(r'[ \t]+', ' ', text)
+        
+        return text.strip()
     except Exception as e:
         raise ValueError(f"Failed to extract text from Markdown: {e}") from e
 
@@ -195,26 +231,43 @@ Output MUST be valid JSON ONLY and follow the specified schema below. Do not inc
 
 DEVELOPER_PROMPT = """Rules:
 1. Extract only what is explicitly stated in the document.
-2. Organize functional requirements as individual items in "functional_requirements" array.
-3. Non-functional requirements (performance, accessibility, responsiveness) go into "non_functional_requirements" array.
-4. User flows should be described as sequential steps in "user_flow_context" array.
-5. Frontend features should list UI components, pages, or major features.
-6. Overview should be a concise summary paragraph.
-7. Output valid JSON only - no markdown, no code blocks, no explanations.
-8. If a section is missing, return empty array [] or empty string "".
-9. Ensure all arrays are lists, even if empty."""
+2. Read through ALL sections of the document, including:
+   - Sections titled "Overview", "Introduction", "About" → extract overview
+   - Sections titled "Functional Requirements", "Features", "Capabilities" → extract functional requirements
+   - Sections titled "Non-Functional Requirements", "Performance", "Accessibility" → extract non-functional requirements
+   - Sections titled "UI/Frontend Requirements", "Frontend Features", "Pages", "Components" → extract frontend features
+   - Sections titled "User Flows", "Typical User Flows", "User Stories" → extract user flow context
+3. Organize functional requirements as individual items in "functional_requirements" array (one requirement per array item).
+4. Non-functional requirements (performance, accessibility, responsiveness, UX) go into "non_functional_requirements" array.
+5. User flows should be described as sequential steps in "user_flow_context" array (one flow description per item).
+6. Frontend features should list UI components, pages, or major features mentioned in the document.
+7. Overview should be a concise summary paragraph extracted from overview/introduction sections.
+8. Output valid JSON only - no markdown, no code blocks, no explanations.
+9. If a section is missing, return empty array [] or empty string "".
+10. Ensure all arrays are lists, even if empty.
+11. DO NOT return empty arrays/strings if the document contains relevant information - extract it!"""
 
 USER_PROMPT_TEMPLATE = """DOCUMENT TEXT:
 {document_text}
 
-Extract overview, frontend features, functional requirements, non-functional requirements, and user flow context. Output as JSON matching this exact schema:
+Carefully read the document above and extract:
+
+1. **overview**: A summary paragraph describing what the application/feature does (from Overview/Introduction sections)
+2. **frontend_features**: List of UI components, pages, screens, or frontend features mentioned (from UI/Frontend Requirements sections)
+3. **functional_requirements**: List of what the UI must do - user actions, form behaviors, navigation, interactions (from Functional Requirements sections)
+4. **non_functional_requirements**: List of performance, accessibility, responsiveness, UX expectations (from Non-Functional Requirements sections)
+5. **user_flow_context**: List of user journey descriptions or step-by-step interaction flows (from User Flows sections)
+
+Extract ALL relevant information. If the document has subsections (like 3.1, 3.2), extract requirements from those subsections too.
+
+Output as JSON matching this exact schema:
 
 {{
-  "overview": "string",
-  "frontend_features": ["string"],
-  "functional_requirements": ["string"],
-  "non_functional_requirements": ["string"],
-  "user_flow_context": ["string"]
+  "overview": "string (summary paragraph)",
+  "frontend_features": ["feature 1", "feature 2", ...],
+  "functional_requirements": ["requirement 1", "requirement 2", ...],
+  "non_functional_requirements": ["requirement 1", "requirement 2", ...],
+  "user_flow_context": ["flow description 1", "flow description 2", ...]
 }}"""
 
 

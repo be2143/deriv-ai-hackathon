@@ -1,0 +1,397 @@
+{
+  "generated_at": "2026-02-07T12:52:57.906502",
+  "page_url": "https://www.random.org",
+  "total_test_cases": 15,
+  "test_cases": [
+    {
+      "test_name": "Navigate to Integers Generator and Generate Single Random Integer",
+      "description": "User navigates to the Integers generator page, inputs a valid min and max range, submits the form, and verifies that results are displayed.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": "Integers",
+          "value": null
+        },
+        {
+          "action": "assert_url_contains",
+          "target": null,
+          "value": "/integers/"
+        },
+        {
+          "action": "type",
+          "target": "q",
+          "value": "1"
+        },
+        {
+          "action": "type",
+          "target": "q",
+          "value": "10"
+        },
+        {
+          "action": "click",
+          "target": "element_135",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "True Random Number Service",
+          "value": null
+        }
+      ]
+    },
+    {
+      "test_name": "Generate Multiple Random Integers with Valid Range",
+      "description": "User navigates to Integers generator, inputs min and max range and quantity, submits, and verifies multiple results are shown.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": "Integers",
+          "value": null
+        },
+        {
+          "action": "type",
+          "target": "q",
+          "value": "5"
+        },
+        {
+          "action": "type",
+          "target": "q",
+          "value": "15"
+        },
+        {
+          "action": "type",
+          "target": "q",
+          "value": "5"
+        },
+        {
+          "action": "click",
+          "target": "element_135",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "True Random Number Service",
+          "value": null
+        }
+      ]
+    },
+    {
+      "test_name": "Shuffle List Randomizer with Valid List Items",
+      "description": "User navigates to List Randomizer, inputs multiple list items, clicks randomize, and verifies shuffled results are displayed.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": "List Randomizer",
+          "value": null
+        },
+        {
+          "action": "type",
+          "target": "q",
+          "value": "apple\nbanana\ncherry\n"
+        },
+        {
+          "action": "click",
+          "target": "element_135",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "True Random Number Service",
+          "value": null
+        }
+      ]
+    },
+    {
+      "test_name": "Coin Flipper Simulation Basic Functionality",
+      "description": "User navigates to Coin Flipper tool, triggers a flip, and verifies that a result is displayed.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": "Coin Flipper",
+          "value": null
+        },
+        {
+          "action": "click",
+          "target": "element_135",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "True Random Number Service",
+          "value": null
+        }
+      ]
+    },
+    {
+      "test_name": "Dice Roller Simulation Basic Functionality",
+      "description": "User navigates to Dice Roller tool, rolls dice, and verifies that dice roll results are displayed.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": "Dice Roller",
+          "value": null
+        },
+        {
+          "action": "click",
+          "target": "element_135",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "True Random Number Service",
+          "value": null
+        }
+      ]
+    },
+    {
+      "test_name": "Playing Card Shuffler Basic Functionality",
+      "description": "User navigates to Playing Card Shuffler, shuffles cards, and verifies shuffled deck is displayed.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": "Playing Card Shuffler",
+          "value": null
+        },
+        {
+          "action": "click",
+          "target": "element_135",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "True Random Number Service",
+          "value": null
+        }
+      ]
+    },
+    {
+      "test_name": "Generate Decimal Fractions with Valid Input",
+      "description": "User navigates to Decimal Fractions generator, inputs valid parameters, submits, and verifies results are shown.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": "Decimal Fractions",
+          "value": null
+        },
+        {
+          "action": "type",
+          "target": "q",
+          "value": "0.1"
+        },
+        {
+          "action": "type",
+          "target": "q",
+          "value": "0.9"
+        },
+        {
+          "action": "click",
+          "target": "element_135",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "True Random Number Service",
+          "value": null
+        }
+      ]
+    },
+    {
+      "test_name": "Generate Hexadecimal Color Codes",
+      "description": "User navigates to Hex Color Codes generator, submits default form, and verifies color codes are displayed.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": "Hex Color Codes",
+          "value": null
+        },
+        {
+          "action": "click",
+          "target": "element_135",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "True Random Number Service",
+          "value": null
+        }
+      ]
+    },
+    {
+      "test_name": "Generate Geographic Coordinates with Default Parameters",
+      "description": "User navigates to Geographic Coordinates generator, submits form, and verifies coordinates are displayed.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": "Geographic Coordinates",
+          "value": null
+        },
+        {
+          "action": "click",
+          "target": "element_135",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "True Random Number Service",
+          "value": null
+        }
+      ]
+    },
+    {
+      "test_name": "Generate Clock Times with Valid Input",
+      "description": "User navigates to Clock Times generator, inputs valid parameters, submits, and verifies times are displayed.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": "Clock Times",
+          "value": null
+        },
+        {
+          "action": "type",
+          "target": "q",
+          "value": "1"
+        },
+        {
+          "action": "type",
+          "target": "q",
+          "value": "12"
+        },
+        {
+          "action": "click",
+          "target": "element_135",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "True Random Number Service",
+          "value": null
+        }
+      ]
+    },
+    {
+      "test_name": "Generate Strings with Valid Parameters",
+      "description": "User navigates to Strings generator, inputs parameters, submits, and verifies generated strings are displayed.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": "Strings",
+          "value": null
+        },
+        {
+          "action": "type",
+          "target": "q",
+          "value": "5"
+        },
+        {
+          "action": "click",
+          "target": "element_135",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "True Random Number Service",
+          "value": null
+        }
+      ]
+    },
+    {
+      "test_name": "Generate Passwords with Valid Parameters",
+      "description": "User navigates to Passwords generator, inputs parameters, submits, and verifies passwords are displayed.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": "Passwords",
+          "value": null
+        },
+        {
+          "action": "type",
+          "target": "q",
+          "value": "8"
+        },
+        {
+          "action": "click",
+          "target": "element_135",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "True Random Number Service",
+          "value": null
+        }
+      ]
+    },
+    {
+      "test_name": "Navigation Flow from Home to Lottery Quick Pick",
+      "description": "User clicks on Lottery Quick Pick link from home page and verifies navigation to correct URL.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": "Home",
+          "value": null
+        },
+        {
+          "action": "click",
+          "target": "Lottery Quick Pick",
+          "value": null
+        },
+        {
+          "action": "assert_url_contains",
+          "target": null,
+          "value": "/quick-pick/"
+        }
+      ]
+    },
+    {
+      "test_name": "Empty Input Validation on Integers Generator",
+      "description": "User navigates to Integers generator, submits form with empty inputs, and verifies error message or no results.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": "Integers",
+          "value": null
+        },
+        {
+          "action": "click",
+          "target": "element_135",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "True Random Number Service",
+          "value": null
+        }
+      ]
+    },
+    {
+      "test_name": "Invalid Range Input on Integers Generator",
+      "description": "User inputs invalid min greater than max in Integers generator, submits, and verifies error message is shown.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": "Integers",
+          "value": null
+        },
+        {
+          "action": "type",
+          "target": "q",
+          "value": "10"
+        },
+        {
+          "action": "type",
+          "target": "q",
+          "value": "5"
+        },
+        {
+          "action": "click",
+          "target": "element_135",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "True Random Number Service",
+          "value": null
+        }
+      ]
+    }
+  ]
+}

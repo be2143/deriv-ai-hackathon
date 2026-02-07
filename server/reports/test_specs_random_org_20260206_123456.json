@@ -1,0 +1,360 @@
+{
+  "generated_at": "2026-02-06T20:04:43.578542",
+  "page_url": "https://www.random.org/",
+  "total_test_cases": 13,
+  "test_cases": [
+    {
+      "test_name": "GenerateSingleRandomIntegerWithinValidRange",
+      "description": "User generates a single random integer within a valid min and max range and verifies the result is displayed.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/"
+        },
+        {
+          "action": "type",
+          "target": "min",
+          "value": "1"
+        },
+        {
+          "action": "type",
+          "target": "max_page7",
+          "value": "10"
+        },
+        {
+          "action": "click",
+          "target": "input_83",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "input_83",
+          "value": null
+        }
+      ]
+    },
+    {
+      "test_name": "GenerateMultipleRandomIntegersWithValidParameters",
+      "description": "User generates multiple random integers with valid quantity and range and verifies results are displayed.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/"
+        },
+        {
+          "action": "type",
+          "target": "num_page7",
+          "value": "5"
+        },
+        {
+          "action": "type",
+          "target": "min",
+          "value": "1"
+        },
+        {
+          "action": "type",
+          "target": "max_page7",
+          "value": "100"
+        },
+        {
+          "action": "click",
+          "target": "input_83",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "input_83",
+          "value": null
+        }
+      ]
+    },
+    {
+      "test_name": "SubmitEmptyInputFieldsShowsValidationError",
+      "description": "User submits the form with empty required fields and verifies validation error is shown.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/"
+        },
+        {
+          "action": "type",
+          "target": "num_page7",
+          "value": ""
+        },
+        {
+          "action": "type",
+          "target": "min",
+          "value": ""
+        },
+        {
+          "action": "type",
+          "target": "max_page7",
+          "value": ""
+        },
+        {
+          "action": "click",
+          "target": "input_83",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "input_83",
+          "value": null
+        }
+      ]
+    },
+    {
+      "test_name": "InvalidRangeMinGreaterThanMaxShowsError",
+      "description": "User enters a min value greater than max and verifies error message is displayed.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/"
+        },
+        {
+          "action": "type",
+          "target": "min",
+          "value": "20"
+        },
+        {
+          "action": "type",
+          "target": "max_page7",
+          "value": "10"
+        },
+        {
+          "action": "click",
+          "target": "input_83",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "input_83",
+          "value": null
+        }
+      ]
+    },
+    {
+      "test_name": "ResetFormClearsAllInputs",
+      "description": "User fills inputs and clicks reset button to verify all inputs are cleared.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/"
+        },
+        {
+          "action": "type",
+          "target": "num_page7",
+          "value": "3"
+        },
+        {
+          "action": "type",
+          "target": "min",
+          "value": "1"
+        },
+        {
+          "action": "type",
+          "target": "max_page7",
+          "value": "5"
+        },
+        {
+          "action": "click",
+          "target": "input_84",
+          "value": null
+        },
+        {
+          "action": "assert_text",
+          "target": "num_page7",
+          "value": ""
+        },
+        {
+          "action": "assert_text",
+          "target": "min",
+          "value": ""
+        },
+        {
+          "action": "assert_text",
+          "target": "max_page7",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "test_name": "GenerateDecimalFractionsWithinRange",
+      "description": "User generates decimal fractions within a specified range and verifies results are displayed.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/"
+        },
+        {
+          "action": "type",
+          "target": "min_page8",
+          "value": "0.0"
+        },
+        {
+          "action": "type",
+          "target": "max_page8",
+          "value": "1.0"
+        },
+        {
+          "action": "click",
+          "target": "input_93",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "input_93",
+          "value": null
+        }
+      ]
+    },
+    {
+      "test_name": "ShuffleListRandomizerFunctionality",
+      "description": "User navigates to list randomizer, inputs list items, randomizes and verifies results are displayed.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/"
+        },
+        {
+          "action": "type",
+          "target": "q_page1",
+          "value": "apple\nbanana\ncherry\n"
+        },
+        {
+          "action": "click",
+          "target": "input_3",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "input_3",
+          "value": null
+        }
+      ]
+    },
+    {
+      "test_name": "CoinFlipperSimulation",
+      "description": "User uses the coin flipper simulation and verifies result is displayed.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/"
+        },
+        {
+          "action": "click",
+          "target": "input_12",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "input_12",
+          "value": null
+        }
+      ]
+    },
+    {
+      "test_name": "DiceRollerSimulation",
+      "description": "User uses the dice roller simulation and verifies result is displayed.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/"
+        },
+        {
+          "action": "click",
+          "target": "input_21",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "input_21",
+          "value": null
+        }
+      ]
+    },
+    {
+      "test_name": "PlayingCardShufflerSimulation",
+      "description": "User uses the playing card shuffler and verifies shuffled cards are displayed.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/"
+        },
+        {
+          "action": "click",
+          "target": "input_39",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "input_39",
+          "value": null
+        }
+      ]
+    },
+    {
+      "test_name": "LotteryQuickPickFunctionality",
+      "description": "User uses the lottery quick-pick tool and verifies numbers are generated.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/"
+        },
+        {
+          "action": "click",
+          "target": "input_66",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "input_66",
+          "value": null
+        }
+      ]
+    },
+    {
+      "test_name": "NavigationToAPIPage",
+      "description": "User navigates to the API & Integration page and verifies URL contains 'api'.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/api/"
+        },
+        {
+          "action": "assert_url_contains",
+          "target": null,
+          "value": "api"
+        }
+      ]
+    },
+    {
+      "test_name": "LoginButtonDisabledWhenNotAuthenticated",
+      "description": "Verify that the login button is disabled when user is not authenticated.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/"
+        },
+        {
+          "action": "assert_disabled",
+          "target": "save-settings-disabled",
+          "value": null
+        }
+      ]
+    }
+  ]
+}

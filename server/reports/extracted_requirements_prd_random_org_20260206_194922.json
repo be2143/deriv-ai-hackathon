@@ -1,0 +1,58 @@
+{
+  "extracted_at": "2026-02-06T19:49:22.468392",
+  "source": "/Users/aruzhan/Desktop/deriv-ai-hackathon/test_scripts/prd_random_org.md",
+  "requirements": {
+    "overview": "Random.org is a web platform that provides true random numbers and random data generation services based on atmospheric noise. The website offers a suite of interactive tools, such as integer generators, list randomizers, dice rollers, coin flippers, card shufflers, and geographic coordinate pickers. Additionally, premium services provide support for large random data sets and verified drawing services useful for promotions, raffles, and sweepstakes.",
+    "frontend_features": [
+      "Home Page",
+      "Navigation bar with access to all generator categories",
+      "Quick search for tools",
+      "Featured randomizer widgets",
+      "Generator Interfaces",
+      "Dynamic forms for inputting parameters (min/max range, quantity)",
+      "Real-time display of results upon submission",
+      "Controls for copying/downloading results",
+      "API & Integration Pages",
+      "Documentation for API usage",
+      "Example request/response formats",
+      "User Account Management (optional)",
+      "Login for premium services",
+      "Dashboard for managing premium features",
+      "View usage history and quotas",
+      "Educational resources"
+    ],
+    "functional_requirements": [
+      "Allow users to generate a single random number within a specified range.",
+      "Support generation of multiple random integers or sequences.",
+      "Provide tools for list randomization to shuffle user-provided data items.",
+      "Enable simulation tools including: Coin flipper.",
+      "Enable simulation tools including: Dice roller.",
+      "Enable simulation tools including: Playing card shuffler.",
+      "Enable simulation tools including: Lottery quick-pick.",
+      "Enable random generation of specialized data types such as: Decimal fractions.",
+      "Enable random generation of specialized data types such as: Hexadecimal color codes.",
+      "Enable random generation of specialized data types such as: Geographic coordinates.",
+      "Enable random generation of specialized data types such as: Clock times and dates.",
+      "Enable random generation of specialized data types such as: Strings and passwords.",
+      "Provide a responsive web interface for selecting generator type and parameters.",
+      "Support for customizing ranges, quantity, and distribution type.",
+      "Display results in real-time with clear formatting.",
+      "Allow users to copy or download generated results.",
+      "Provide clear error messages for invalid input or service limits.",
+      "Provide a third-party drawing service for contests and promotions.",
+      "Allow authenticated users to organize multi-round giveaways.",
+      "Deliver verified results with transparency data.",
+      "Provide pricing and purchase options for premium services."
+    ],
+    "non_functional_requirements": [
+      "Random number and sequence generation should complete promptly, even for large ranges or quantities.",
+      "UI must adapt to desktop and mobile browsers without requiring plugins.",
+      "Conform to accessibility standards, including keyboard navigability and screen reader support.",
+      "Support multiple language selections and locale-based formatting."
+    ],
+    "user_flow_context": [
+      "Generate a Random Integer: User selects the “Integers” tool, Enters a minimum and maximum range, Submits form → random values displayed.",
+      "Shuffle a List: User opens “List Randomizer”, Pastes/customizes list items, Presses randomize → results shown."
+    ]
+  }
+}

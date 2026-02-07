@@ -1,0 +1,403 @@
+{
+  "url": "https://www.random.org/",
+  "executed_at": "2026-02-07T13:10:36.542971",
+  "total_tests": 14,
+  "passed": 0,
+  "failed": 14,
+  "results": [
+    {
+      "status": "FAIL",
+      "execution_time": 3.0190720558166504,
+      "error_message": "Expected '/integers/' in URL 'https://www.random.org/'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": "Integers",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.3668830394744873
+        },
+        {
+          "step": 2,
+          "action": "assert_url_contains",
+          "target": null,
+          "value": "/integers/",
+          "status": "FAIL",
+          "error": "Expected '/integers/' in URL 'https://www.random.org/'",
+          "duration": 0.003777027130126953
+        }
+      ],
+      "total_steps": 6,
+      "passed_steps": 1,
+      "test_name": "Navigate to Integers Tool and Generate Single Random Number"
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 1.926638126373291,
+      "error_message": "Expected '/lists/' in URL 'https://www.random.org/'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": "List Randomizer",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.3697030544281006
+        },
+        {
+          "step": 2,
+          "action": "assert_url_contains",
+          "target": null,
+          "value": "/lists/",
+          "status": "FAIL",
+          "error": "Expected '/lists/' in URL 'https://www.random.org/'",
+          "duration": 0.002585887908935547
+        }
+      ],
+      "total_steps": 6,
+      "passed_steps": 1,
+      "test_name": "Navigate to List Randomizer and Shuffle Items"
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 1.7039670944213867,
+      "error_message": "Expected '/coins/' in URL 'https://www.random.org/'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": "Coin Flipper",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.35179781913757324
+        },
+        {
+          "step": 2,
+          "action": "assert_url_contains",
+          "target": null,
+          "value": "/coins/",
+          "status": "FAIL",
+          "error": "Expected '/coins/' in URL 'https://www.random.org/'",
+          "duration": 0.0024831295013427734
+        }
+      ],
+      "total_steps": 3,
+      "passed_steps": 1,
+      "test_name": "Navigate to Coin Flipper and Verify UI Elements"
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 1.9666218757629395,
+      "error_message": "Expected '/dice/' in URL 'https://www.random.org/'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": "Dice Roller",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.6217100620269775
+        },
+        {
+          "step": 2,
+          "action": "assert_url_contains",
+          "target": null,
+          "value": "/dice/",
+          "status": "FAIL",
+          "error": "Expected '/dice/' in URL 'https://www.random.org/'",
+          "duration": 0.0028858184814453125
+        }
+      ],
+      "total_steps": 3,
+      "passed_steps": 1,
+      "test_name": "Navigate to Dice Roller and Verify UI Elements"
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 1.7168099880218506,
+      "error_message": "Expected '/playing-cards/' in URL 'https://www.random.org/'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": "Playing Card Shuffler",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.3711380958557129
+        },
+        {
+          "step": 2,
+          "action": "assert_url_contains",
+          "target": null,
+          "value": "/playing-cards/",
+          "status": "FAIL",
+          "error": "Expected '/playing-cards/' in URL 'https://www.random.org/'",
+          "duration": 0.0023648738861083984
+        }
+      ],
+      "total_steps": 3,
+      "passed_steps": 1,
+      "test_name": "Navigate to Playing Card Shuffler and Verify UI Elements"
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 1.9412312507629395,
+      "error_message": "Expected '/quick-pick/' in URL 'https://www.random.org/'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": "Lottery Quick Pick",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.35160112380981445
+        },
+        {
+          "step": 2,
+          "action": "assert_url_contains",
+          "target": null,
+          "value": "/quick-pick/",
+          "status": "FAIL",
+          "error": "Expected '/quick-pick/' in URL 'https://www.random.org/'",
+          "duration": 0.002566814422607422
+        }
+      ],
+      "total_steps": 3,
+      "passed_steps": 1,
+      "test_name": "Navigate to Lottery Quick Pick and Verify UI Elements"
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 2.9738409519195557,
+      "error_message": "Expected text 'Dice Roller' in ''",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": "Home",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.6062560081481934
+        },
+        {
+          "step": 2,
+          "action": "assert_visible",
+          "target": "q",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.02051520347595215
+        },
+        {
+          "step": 3,
+          "action": "type",
+          "target": "q",
+          "value": "Dice Roller",
+          "status": "PASS",
+          "duration": 0.11460089683532715
+        },
+        {
+          "step": 4,
+          "action": "assert_text",
+          "target": "q",
+          "value": "Dice Roller",
+          "status": "FAIL",
+          "error": "Expected text 'Dice Roller' in ''",
+          "duration": 0.010805130004882812
+        }
+      ],
+      "total_steps": 4,
+      "passed_steps": 3,
+      "test_name": "Search for a Tool Using Quick Search Input"
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 17.557660818099976,
+      "error_message": "Message: \n",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": "Home",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.38088202476501465
+        },
+        {
+          "step": 2,
+          "action": "click",
+          "target": "Integers",
+          "value": null,
+          "status": "FAIL",
+          "error": "Message: \n",
+          "duration": 15.47080683708191
+        }
+      ],
+      "total_steps": 7,
+      "passed_steps": 1,
+      "test_name": "Navigate Through Multiple Tools and Verify URL Changes"
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 1.8111517429351807,
+      "error_message": "Expected '/integers/' in URL 'https://www.random.org/'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": "Integers",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.40363383293151855
+        },
+        {
+          "step": 2,
+          "action": "assert_url_contains",
+          "target": null,
+          "value": "/integers/",
+          "status": "FAIL",
+          "error": "Expected '/integers/' in URL 'https://www.random.org/'",
+          "duration": 0.0027472972869873047
+        }
+      ],
+      "total_steps": 5,
+      "passed_steps": 1,
+      "test_name": "Attempt to Generate Integers with Empty Input and Verify Error"
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 1.9174931049346924,
+      "error_message": "Expected '/account/' in URL 'https://www.random.org/'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": "Login",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.5570778846740723
+        },
+        {
+          "step": 2,
+          "action": "assert_url_contains",
+          "target": null,
+          "value": "/account/",
+          "status": "FAIL",
+          "error": "Expected '/account/' in URL 'https://www.random.org/'",
+          "duration": 0.0019750595092773438
+        }
+      ],
+      "total_steps": 3,
+      "passed_steps": 1,
+      "test_name": "Navigate to Premium Services and Verify Login Link Visibility"
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 1.9468297958374023,
+      "error_message": "Expected 'api.random.org' in URL 'https://www.random.org/'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": "API for Automated Clients",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.4201211929321289
+        },
+        {
+          "step": 2,
+          "action": "assert_url_contains",
+          "target": null,
+          "value": "api.random.org",
+          "status": "FAIL",
+          "error": "Expected 'api.random.org' in URL 'https://www.random.org/'",
+          "duration": 0.0022940635681152344
+        }
+      ],
+      "total_steps": 2,
+      "passed_steps": 1,
+      "test_name": "Navigate to API for Automated Clients and Verify Page Load"
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 1.7324230670928955,
+      "error_message": "Expected '/draws/' in URL 'https://www.random.org/'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": "Third-Party Draw Service",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.3986661434173584
+        },
+        {
+          "step": 2,
+          "action": "assert_url_contains",
+          "target": null,
+          "value": "/draws/",
+          "status": "FAIL",
+          "error": "Expected '/draws/' in URL 'https://www.random.org/'",
+          "duration": 0.002370119094848633
+        }
+      ],
+      "total_steps": 2,
+      "passed_steps": 1,
+      "test_name": "Navigate to Third-Party Draw Service and Verify Page Load"
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 1.9703569412231445,
+      "error_message": "Expected '/faq/' in URL 'https://www.random.org/'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": "FAQ",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.5644800662994385
+        },
+        {
+          "step": 2,
+          "action": "assert_url_contains",
+          "target": null,
+          "value": "/faq/",
+          "status": "FAIL",
+          "error": "Expected '/faq/' in URL 'https://www.random.org/'",
+          "duration": 0.00431060791015625
+        }
+      ],
+      "total_steps": 3,
+      "passed_steps": 1,
+      "test_name": "Navigate to FAQ and Verify FAQ Section Visibility"
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 2.1868691444396973,
+      "error_message": "Expected '/terms/' in URL 'https://www.random.org/'",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": "Terms and Conditions",
+          "value": null,
+          "status": "PASS",
+          "duration": 0.7192361354827881
+        },
+        {
+          "step": 2,
+          "action": "assert_url_contains",
+          "target": null,
+          "value": "/terms/",
+          "status": "FAIL",
+          "error": "Expected '/terms/' in URL 'https://www.random.org/'",
+          "duration": 0.0025930404663085938
+        }
+      ],
+      "total_steps": 2,
+      "passed_steps": 1,
+      "test_name": "Navigate to Terms and Conditions and Verify Page Load"
+    }
+  ]
+}

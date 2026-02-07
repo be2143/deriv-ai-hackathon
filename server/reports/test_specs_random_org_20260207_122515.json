@@ -1,0 +1,375 @@
+{
+  "generated_at": "2026-02-07T12:25:15.590291",
+  "page_url": "https://www.random.org/#/",
+  "total_test_cases": 13,
+  "test_cases": [
+    {
+      "test_name": "Navigate to Home Page and Verify Title and Heading",
+      "description": "User navigates to the home page and verifies the page title and main heading are visible and correct.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/#/"
+        },
+        {
+          "action": "assert_text",
+          "target": "#invisible > h1",
+          "value": "True Random Number Service"
+        },
+        {
+          "action": "assert_visible",
+          "target": "#invisible > h1",
+          "value": null
+        }
+      ]
+    },
+    {
+      "test_name": "Search for a Tool Using Quick Search with Valid Input",
+      "description": "User enters a valid search term in the search input and submits the form, then verifies the URL contains the search query.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/#/"
+        },
+        {
+          "action": "type",
+          "target": "#search > form > div > input:nth-of-type(1)",
+          "value": "integer generator"
+        },
+        {
+          "action": "click",
+          "target": "#search > form > div > input:nth-of-type(2)",
+          "value": null
+        },
+        {
+          "action": "assert_url_contains",
+          "target": null,
+          "value": "q=integer+generator"
+        }
+      ]
+    },
+    {
+      "test_name": "Navigate to Integer Generator via Navigation Menu",
+      "description": "User clicks on the 'Numbers' menu and then selects 'Integer Generator' from the submenu, verifying the page loads correctly.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/#/"
+        },
+        {
+          "action": "click",
+          "target": "Numbers",
+          "value": null
+        },
+        {
+          "action": "click",
+          "target": "Integer Generator",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "#ijahhrdhyrpsarxubwpbmoaveytahviexldxzewj-min",
+          "value": null
+        }
+      ]
+    },
+    {
+      "test_name": "Generate Single Random Integer with Valid Range",
+      "description": "User inputs a valid minimum and maximum range and clicks the generate button, then verifies that results are displayed.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/#/"
+        },
+        {
+          "action": "click",
+          "target": "Integer Generator",
+          "value": null
+        },
+        {
+          "action": "type",
+          "target": "#ijahhrdhyrpsarxubwpbmoaveytahviexldxzewj-min",
+          "value": "1"
+        },
+        {
+          "action": "type",
+          "target": "#ijahhrdhyrpsarxubwpbmoaveytahviexldxzewj-max",
+          "value": "10"
+        },
+        {
+          "action": "click",
+          "target": "#ijahhrdhyrpsarxubwpbmoaveytahviexldxzewj-button",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "#ijahhrdhyrpsarxubwpbmoaveytahviexldxzewj-credits > a",
+          "value": "RANDOM.ORG"
+        }
+      ]
+    },
+    {
+      "test_name": "Generate Random Integer with Min Greater Than Max Shows Error",
+      "description": "User inputs a minimum value greater than the maximum value and attempts to generate a number, expecting an error message or validation feedback.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/#/"
+        },
+        {
+          "action": "click",
+          "target": "Integer Generator",
+          "value": null
+        },
+        {
+          "action": "type",
+          "target": "#ijahhrdhyrpsarxubwpbmoaveytahviexldxzewj-min",
+          "value": "20"
+        },
+        {
+          "action": "type",
+          "target": "#ijahhrdhyrpsarxubwpbmoaveytahviexldxzewj-max",
+          "value": "10"
+        },
+        {
+          "action": "click",
+          "target": "#ijahhrdhyrpsarxubwpbmoaveytahviexldxzewj-button",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "#ijahhrdhyrpsarxubwpbmoaveytahviexldxzewj-min",
+          "value": null
+        }
+      ]
+    },
+    {
+      "test_name": "Navigate to List Randomizer and Verify Interface",
+      "description": "User navigates to the List Randomizer tool and verifies the interface elements are visible and enabled.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/#/"
+        },
+        {
+          "action": "click",
+          "target": "List Randomizer",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "List Randomizer",
+          "value": null
+        }
+      ]
+    },
+    {
+      "test_name": "Shuffle a List with Valid Items and Verify Results",
+      "description": "User enters multiple list items into the List Randomizer, clicks randomize, and verifies that results are displayed.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/#/"
+        },
+        {
+          "action": "click",
+          "target": "List Randomizer",
+          "value": null
+        },
+        {
+          "action": "type",
+          "target": "#search > form > div > input:nth-of-type(1)",
+          "value": "apple\nbanana\ncherry"
+        },
+        {
+          "action": "click",
+          "target": "#search > form > div > input:nth-of-type(2)",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "List Randomizer",
+          "value": null
+        }
+      ]
+    },
+    {
+      "test_name": "Navigate to Coin Flipper Simulation and Verify Visibility",
+      "description": "User navigates to the Coin Flipper simulation tool and verifies the main heading and controls are visible.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/#/"
+        },
+        {
+          "action": "click",
+          "target": "Coin Flipper",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "Coin Flipper",
+          "value": null
+        }
+      ]
+    },
+    {
+      "test_name": "Navigate Through Multiple Navigation Links and Verify Page Transitions",
+      "description": "User clicks through several main navigation links and verifies the page content changes accordingly.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/#/"
+        },
+        {
+          "action": "click",
+          "target": "Games",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "Games and Lotteries",
+          "value": null
+        },
+        {
+          "action": "click",
+          "target": "Numbers",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "Numbers",
+          "value": null
+        },
+        {
+          "action": "click",
+          "target": "Lists & More",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "Lists and Strings and Maps, Oh My!",
+          "value": null
+        }
+      ]
+    },
+    {
+      "test_name": "Verify Cookie Banner Buttons Are Visible and Clickable",
+      "description": "User verifies that cookie banner buttons for acceptance and preferences are visible and enabled.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/#/"
+        },
+        {
+          "action": "assert_visible",
+          "target": "#cookie-banner > div > span > button.btn.btn-default.btn-xs.rdo-input:nth-of-type(1)",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "#cookie-banner > div > span > button.btn.btn-default.btn-xs.rdo-input:nth-of-type(2)",
+          "value": null
+        },
+        {
+          "action": "assert_disabled",
+          "target": "#cookie-banner-necessary",
+          "value": null
+        }
+      ]
+    },
+    {
+      "test_name": "Attempt Search with Empty Input and Verify No Navigation",
+      "description": "User submits the search form with an empty input and verifies that the page does not navigate or change URL.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/#/"
+        },
+        {
+          "action": "type",
+          "target": "#search > form > div > input:nth-of-type(1)",
+          "value": ""
+        },
+        {
+          "action": "click",
+          "target": "#search > form > div > input:nth-of-type(2)",
+          "value": null
+        },
+        {
+          "action": "assert_url_contains",
+          "target": null,
+          "value": "#/"
+        }
+      ]
+    },
+    {
+      "test_name": "Navigate to Login Page and Verify URL and Heading",
+      "description": "User clicks the Login link and verifies the URL changes and login page heading is visible.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/#/"
+        },
+        {
+          "action": "click",
+          "target": "Login",
+          "value": null
+        },
+        {
+          "action": "assert_url_contains",
+          "target": null,
+          "value": "login"
+        },
+        {
+          "action": "assert_visible",
+          "target": "Login",
+          "value": null
+        }
+      ]
+    },
+    {
+      "test_name": "Verify Footer Links Are Visible and Clickable",
+      "description": "User scrolls to footer and verifies that social media and legal links are visible and clickable.",
+      "steps": [
+        {
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/#/"
+        },
+        {
+          "action": "assert_visible",
+          "target": "Twitter",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "Mastodon",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "Terms and Conditions",
+          "value": null
+        },
+        {
+          "action": "assert_visible",
+          "target": "About Us",
+          "value": null
+        }
+      ]
+    }
+  ]
+}

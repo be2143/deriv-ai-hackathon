@@ -1,0 +1,1060 @@
+{
+  "pages": [
+    {
+      "url": "https://www.random.org/",
+      "title": "RANDOM.ORG - True Random Number Service",
+      "forms": [
+        {
+          "action": "https://www.random.org/search",
+          "elements": [
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "q"
+            },
+            {
+              "tag": "input",
+              "type": "submit"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.random.org/quick-pick/",
+      "title": "RANDOM.ORG - Lottery Quick Pick",
+      "forms": [
+        {
+          "action": "https://www.random.org/search",
+          "elements": [
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "q"
+            },
+            {
+              "tag": "input",
+              "type": "submit"
+            }
+          ]
+        },
+        {
+          "action": "https://www.random.org/quick-pick/",
+          "elements": [
+            {
+              "tag": "select",
+              "type": "select-one",
+              "id": "tick",
+              "name": "tickets",
+              "options": [
+                {
+                  "value": "1",
+                  "text": "1"
+                },
+                {
+                  "value": "2",
+                  "text": "2"
+                },
+                {
+                  "text": "... truncated 45 items ...",
+                  "value": "skip"
+                },
+                {
+                  "value": "26",
+                  "text": "26"
+                },
+                {
+                  "value": "49",
+                  "text": "49"
+                },
+                {
+                  "value": "50",
+                  "text": "50"
+                }
+              ]
+            },
+            {
+              "tag": "select",
+              "type": "select-one",
+              "id": "country",
+              "options": [
+                {
+                  "value": "Anguilla",
+                  "text": "Anguilla"
+                },
+                {
+                  "value": "Antigua and Barbuda",
+                  "text": "Antigua and Barbuda"
+                },
+                {
+                  "text": "... truncated 81 items ...",
+                  "value": "skip"
+                },
+                {
+                  "value": "Malaysia",
+                  "text": "Malaysia"
+                },
+                {
+                  "value": "Zambia",
+                  "text": "Zambia"
+                },
+                {
+                  "value": "Zimbabwe",
+                  "text": "Zimbabwe"
+                }
+              ]
+            },
+            {
+              "tag": "select",
+              "type": "select-one",
+              "id": "lot",
+              "options": [
+                {
+                  "value": "12x24.0x0",
+                  "text": "All or Nothing (Multi-State)"
+                },
+                {
+                  "value": "6x44.0x0",
+                  "text": "Arizona - 'The Pick'"
+                },
+                {
+                  "text": "... truncated 121 items ...",
+                  "value": "skip"
+                },
+                {
+                  "value": "5x39.0x0",
+                  "text": "Michigan - Fantasy 5"
+                },
+                {
+                  "value": "5x99.1x99",
+                  "text": "Yotta Lottery"
+                },
+                {
+                  "value": "other",
+                  "text": "Other Lottery"
+                }
+              ]
+            },
+            {
+              "tag": "select",
+              "type": "select-one",
+              "id": "num1",
+              "options": [
+                {
+                  "value": "1",
+                  "text": "1"
+                },
+                {
+                  "value": "2",
+                  "text": "2"
+                },
+                {
+                  "text": "... truncated 45 items ...",
+                  "value": "skip"
+                },
+                {
+                  "value": "26",
+                  "text": "26"
+                },
+                {
+                  "value": "49",
+                  "text": "49"
+                },
+                {
+                  "value": "50",
+                  "text": "50"
+                }
+              ]
+            },
+            {
+              "tag": "select",
+              "type": "select-one",
+              "id": "max1",
+              "options": [
+                {
+                  "value": "2",
+                  "text": "2"
+                },
+                {
+                  "value": "3",
+                  "text": "3"
+                },
+                {
+                  "text": "... truncated 94 items ...",
+                  "value": "skip"
+                },
+                {
+                  "value": "51",
+                  "text": "51"
+                },
+                {
+                  "value": "99",
+                  "text": "99"
+                },
+                {
+                  "value": "100",
+                  "text": "100"
+                }
+              ]
+            },
+            {
+              "tag": "select",
+              "type": "select-one",
+              "id": "num2",
+              "options": [
+                {
+                  "value": "0",
+                  "text": "0"
+                },
+                {
+                  "value": "1",
+                  "text": "1"
+                },
+                {
+                  "text": "... truncated 4 items ...",
+                  "value": "skip"
+                },
+                {
+                  "value": "4",
+                  "text": "4"
+                },
+                {
+                  "value": "7",
+                  "text": "7"
+                },
+                {
+                  "value": "10",
+                  "text": "10"
+                }
+              ]
+            },
+            {
+              "tag": "select",
+              "type": "select-one",
+              "id": "max2",
+              "options": [
+                {
+                  "value": "0",
+                  "text": "-"
+                },
+                {
+                  "value": "2",
+                  "text": "2"
+                },
+                {
+                  "text": "... truncated 36 items ...",
+                  "value": "skip"
+                },
+                {
+                  "value": "21",
+                  "text": "21"
+                },
+                {
+                  "value": "90",
+                  "text": "90"
+                },
+                {
+                  "value": "99",
+                  "text": "99"
+                }
+              ]
+            },
+            {
+              "tag": "input",
+              "type": "hidden",
+              "id": "lottery",
+              "name": "lottery"
+            },
+            {
+              "tag": "input",
+              "type": "submit"
+            },
+            {
+              "tag": "input",
+              "type": "button"
+            },
+            {
+              "tag": "input",
+              "type": "button",
+              "id": "save-settings"
+            },
+            {
+              "tag": "input",
+              "type": "button",
+              "id": "restore-settings"
+            },
+            {
+              "tag": "input",
+              "type": "button",
+              "id": "clear-settings"
+            },
+            {
+              "tag": "input",
+              "type": "button",
+              "id": "save-settings-disabled"
+            },
+            {
+              "tag": "input",
+              "type": "button",
+              "id": "restore-settings-disabled"
+            },
+            {
+              "tag": "input",
+              "type": "button",
+              "id": "clear-settings-disabled"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.random.org/keno/",
+      "title": "RANDOM.ORG - Keno Quick Pick",
+      "forms": [
+        {
+          "action": "https://www.random.org/search",
+          "elements": [
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "q"
+            },
+            {
+              "tag": "input",
+              "type": "submit"
+            }
+          ]
+        },
+        {
+          "action": "https://www.random.org/keno/",
+          "elements": [
+            {
+              "tag": "select",
+              "type": "select-one",
+              "name": "tickets",
+              "options": [
+                {
+                  "value": "1",
+                  "text": "1"
+                },
+                {
+                  "value": "2",
+                  "text": "2"
+                },
+                {
+                  "text": "... truncated 15 items ...",
+                  "value": "skip"
+                },
+                {
+                  "value": "11",
+                  "text": "11"
+                },
+                {
+                  "value": "19",
+                  "text": "19"
+                },
+                {
+                  "value": "20",
+                  "text": "20"
+                }
+              ]
+            },
+            {
+              "tag": "select",
+              "type": "select-one",
+              "name": "numbers",
+              "options": [
+                {
+                  "value": "1",
+                  "text": "1"
+                },
+                {
+                  "value": "2",
+                  "text": "2"
+                },
+                {
+                  "text": "... truncated 15 items ...",
+                  "value": "skip"
+                },
+                {
+                  "value": "11",
+                  "text": "11"
+                },
+                {
+                  "value": "19",
+                  "text": "19"
+                },
+                {
+                  "value": "20",
+                  "text": "20"
+                }
+              ]
+            },
+            {
+              "tag": "select",
+              "type": "select-one",
+              "name": "max",
+              "options": [
+                {
+                  "value": "62",
+                  "text": "62"
+                },
+                {
+                  "value": "70",
+                  "text": "70"
+                },
+                {
+                  "value": "80",
+                  "text": "80"
+                }
+              ]
+            },
+            {
+              "tag": "input",
+              "type": "submit"
+            },
+            {
+              "tag": "input",
+              "type": "reset"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.random.org/coins/",
+      "title": "RANDOM.ORG - Coin Flipper",
+      "forms": [
+        {
+          "action": "https://www.random.org/search",
+          "elements": [
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "q"
+            },
+            {
+              "tag": "input",
+              "type": "submit"
+            }
+          ]
+        },
+        {
+          "action": "https://www.random.org/coins/",
+          "elements": [
+            {
+              "tag": "select",
+              "type": "select-one",
+              "name": "num",
+              "options": [
+                {
+                  "value": "1",
+                  "text": "1"
+                },
+                {
+                  "value": "2",
+                  "text": "2"
+                },
+                {
+                  "text": "... truncated 195 items ...",
+                  "value": "skip"
+                },
+                {
+                  "value": "101",
+                  "text": "101"
+                },
+                {
+                  "value": "199",
+                  "text": "199"
+                },
+                {
+                  "value": "200",
+                  "text": "200"
+                }
+              ]
+            },
+            {
+              "tag": "select",
+              "type": "select-one",
+              "name": "cur",
+              "options": [
+                {
+                  "value": "60-eur.ireland-1euro",
+                  "text": "Select a coin type..."
+                },
+                {
+                  "value": "20-novelty.decision-maker",
+                  "text": "Todd Redden's Decision Maker Coin"
+                },
+                {
+                  "text": "... truncated 84 items ...",
+                  "value": "skip"
+                },
+                {
+                  "value": "60-eur.luxembourg-1euro",
+                  "text": "Luxembourgian \u20ac1"
+                },
+                {
+                  "value": "60-xcd.1dollar",
+                  "text": "East Caribbean $1"
+                },
+                {
+                  "value": "60-yud.20para",
+                  "text": "Yugoslavian 20 Para"
+                }
+              ]
+            },
+            {
+              "tag": "input",
+              "type": "submit"
+            },
+            {
+              "tag": "input",
+              "type": "reset"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.random.org/dice/",
+      "title": "RANDOM.ORG - Dice Roller",
+      "forms": [
+        {
+          "action": "https://www.random.org/search",
+          "elements": [
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "q"
+            },
+            {
+              "tag": "input",
+              "type": "submit"
+            }
+          ]
+        },
+        {
+          "action": "https://www.random.org/dice/",
+          "elements": [
+            {
+              "tag": "select",
+              "type": "select-one",
+              "name": "num",
+              "options": [
+                {
+                  "value": "1",
+                  "text": "1"
+                },
+                {
+                  "value": "2",
+                  "text": "2"
+                },
+                {
+                  "text": "... truncated 55 items ...",
+                  "value": "skip"
+                },
+                {
+                  "value": "31",
+                  "text": "31"
+                },
+                {
+                  "value": "59",
+                  "text": "59"
+                },
+                {
+                  "value": "60",
+                  "text": "60"
+                }
+              ]
+            },
+            {
+              "tag": "input",
+              "type": "submit"
+            },
+            {
+              "tag": "input",
+              "type": "reset"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.random.org/playing-cards/",
+      "title": "RANDOM.ORG - Playing Card Shuffler",
+      "forms": [
+        {
+          "action": "https://www.random.org/search",
+          "elements": [
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "q"
+            },
+            {
+              "tag": "input",
+              "type": "submit"
+            }
+          ]
+        },
+        {
+          "action": "https://www.random.org/playing-cards/",
+          "elements": [
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "cards"
+            },
+            {
+              "tag": "select",
+              "type": "select-one",
+              "name": "decks",
+              "options": [
+                {
+                  "value": "1",
+                  "text": "1"
+                },
+                {
+                  "value": "2",
+                  "text": "2"
+                },
+                {
+                  "text": "... truncated 3 items ...",
+                  "value": "skip"
+                },
+                {
+                  "value": "5",
+                  "text": "5"
+                },
+                {
+                  "value": "7",
+                  "text": "7"
+                },
+                {
+                  "value": "8",
+                  "text": "8"
+                }
+              ]
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "spades"
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "hearts"
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "diamonds"
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "clubs"
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "aces"
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "twos"
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "threes"
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "fours"
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "fives"
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "sixes"
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "sevens"
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "eights"
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "nines"
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "tens"
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "jacks"
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "queens"
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "kings"
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "bjoker"
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "rjoker"
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "remaining"
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "text"
+            },
+            {
+              "tag": "input",
+              "type": "submit"
+            },
+            {
+              "tag": "input",
+              "type": "reset"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.random.org/birdie-funds/",
+      "title": "RANDOM.ORG - Birdie Fund Randomizer",
+      "forms": [
+        {
+          "action": "https://www.random.org/search",
+          "elements": [
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "q"
+            },
+            {
+              "tag": "input",
+              "type": "submit"
+            }
+          ]
+        },
+        {
+          "action": "https://www.random.org/birdie-funds/",
+          "elements": [
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "birdies"
+            },
+            {
+              "tag": "select",
+              "type": "select-one",
+              "name": "course",
+              "options": [
+                {
+                  "value": "9f",
+                  "text": "9-hole (Front 9)"
+                },
+                {
+                  "value": "9b",
+                  "text": "9-hole (Back 9)"
+                },
+                {
+                  "value": "18",
+                  "text": "18-hole"
+                }
+              ]
+            },
+            {
+              "tag": "input",
+              "type": "hidden",
+              "name": "format"
+            },
+            {
+              "tag": "input",
+              "type": "hidden",
+              "name": "rnd"
+            },
+            {
+              "tag": "input",
+              "type": "submit"
+            },
+            {
+              "tag": "input",
+              "type": "reset"
+            },
+            {
+              "tag": "input",
+              "type": "button"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.random.org/integers/",
+      "title": "RANDOM.ORG - Integer Generator",
+      "forms": [
+        {
+          "action": "https://www.random.org/search",
+          "elements": [
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "q"
+            },
+            {
+              "tag": "input",
+              "type": "submit"
+            }
+          ]
+        },
+        {
+          "action": "https://www.random.org/integers/",
+          "elements": [
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "num"
+            },
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "min"
+            },
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "max"
+            },
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "col"
+            },
+            {
+              "tag": "input",
+              "type": "hidden",
+              "name": "base"
+            },
+            {
+              "tag": "input",
+              "type": "hidden",
+              "name": "format"
+            },
+            {
+              "tag": "input",
+              "type": "hidden",
+              "name": "rnd"
+            },
+            {
+              "tag": "input",
+              "type": "submit"
+            },
+            {
+              "tag": "input",
+              "type": "reset"
+            },
+            {
+              "tag": "input",
+              "type": "button"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.random.org/sequences/",
+      "title": "RANDOM.ORG - Sequence Generator",
+      "forms": [
+        {
+          "action": "https://www.random.org/search",
+          "elements": [
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "q"
+            },
+            {
+              "tag": "input",
+              "type": "submit"
+            }
+          ]
+        },
+        {
+          "action": "https://www.random.org/sequences/",
+          "elements": [
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "min"
+            },
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "max"
+            },
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "col"
+            },
+            {
+              "tag": "input",
+              "type": "hidden",
+              "name": "format"
+            },
+            {
+              "tag": "input",
+              "type": "hidden",
+              "name": "rnd"
+            },
+            {
+              "tag": "input",
+              "type": "submit"
+            },
+            {
+              "tag": "input",
+              "type": "reset"
+            },
+            {
+              "tag": "input",
+              "type": "button"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.random.org/integer-sets/",
+      "title": "RANDOM.ORG - Integer Set Generator",
+      "forms": [
+        {
+          "action": "https://www.random.org/search",
+          "elements": [
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "q"
+            },
+            {
+              "tag": "input",
+              "type": "submit"
+            }
+          ]
+        },
+        {
+          "action": "https://www.random.org/integer-sets/",
+          "elements": [
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "sets"
+            },
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "num"
+            },
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "min"
+            },
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "max"
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "seqnos"
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "commas"
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "sort"
+            },
+            {
+              "tag": "input",
+              "type": "radio",
+              "name": "order"
+            },
+            {
+              "tag": "input",
+              "type": "radio",
+              "name": "order"
+            },
+            {
+              "tag": "input",
+              "type": "radio",
+              "name": "order"
+            },
+            {
+              "tag": "input",
+              "type": "hidden",
+              "name": "format"
+            },
+            {
+              "tag": "input",
+              "type": "hidden",
+              "name": "rnd"
+            },
+            {
+              "tag": "input",
+              "type": "submit"
+            },
+            {
+              "tag": "input",
+              "type": "reset"
+            },
+            {
+              "tag": "input",
+              "type": "button"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

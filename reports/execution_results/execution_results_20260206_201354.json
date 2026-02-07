@@ -1,0 +1,381 @@
+{
+  "executed_at": "2026-02-06T20:13:54.638650",
+  "test_specs_source": "server/reports/test_specs_random_org_20260206_123456.json",
+  "total_tests": 13,
+  "passed": 1,
+  "failed": 12,
+  "total_execution_time": 151.15166401863098,
+  "results": [
+    {
+      "status": "FAIL",
+      "execution_time": 20.00112795829773,
+      "error_message": "Message: \nStacktrace:\n0   chromedriver                        0x000000010078b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100783c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x000000010026683c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75008\n3   chromedriver                        0x00000001002afd7c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375360\n4   chromedriver                        0x00000001002eefe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n5   chromedriver                        0x00000001002a407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n6   chromedriver                        0x000000010074a884 cxxbridge1$str$ptr + 2831984\n7   chromedriver                        0x000000010074dfcc cxxbridge1$str$ptr + 2846136\n8   chromedriver                        0x000000010072f578 cxxbridge1$str$ptr + 2720612\n9   chromedriver                        0x000000010074e850 cxxbridge1$str$ptr + 2848316\n10  chromedriver                        0x000000010071f640 cxxbridge1$str$ptr + 2655276\n11  chromedriver                        0x0000000100772194 cxxbridge1$str$ptr + 2994048\n12  chromedriver                        0x0000000100772310 cxxbridge1$str$ptr + 2994428\n13  chromedriver                        0x000000010078385c cxxbridge1$str$ptr + 3065416\n14  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n15  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/",
+          "status": "PASS",
+          "duration": 0.41591978073120117
+        },
+        {
+          "step": 2,
+          "action": "type",
+          "target": "min",
+          "value": "1",
+          "status": "FAIL",
+          "error": "Message: \nStacktrace:\n0   chromedriver                        0x000000010078b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100783c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x000000010026683c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75008\n3   chromedriver                        0x00000001002afd7c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375360\n4   chromedriver                        0x00000001002eefe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n5   chromedriver                        0x00000001002a407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n6   chromedriver                        0x000000010074a884 cxxbridge1$str$ptr + 2831984\n7   chromedriver                        0x000000010074dfcc cxxbridge1$str$ptr + 2846136\n8   chromedriver                        0x000000010072f578 cxxbridge1$str$ptr + 2720612\n9   chromedriver                        0x000000010074e850 cxxbridge1$str$ptr + 2848316\n10  chromedriver                        0x000000010071f640 cxxbridge1$str$ptr + 2655276\n11  chromedriver                        0x0000000100772194 cxxbridge1$str$ptr + 2994048\n12  chromedriver                        0x0000000100772310 cxxbridge1$str$ptr + 2994428\n13  chromedriver                        0x000000010078385c cxxbridge1$str$ptr + 3065416\n14  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n15  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+          "duration": 16.634027004241943
+        }
+      ],
+      "total_steps": 5,
+      "passed_steps": 1,
+      "test_name": "GenerateSingleRandomIntegerWithinValidRange",
+      "test_description": "User generates a single random integer within a valid min and max range and verifies the result is displayed."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 18.51774001121521,
+      "error_message": "Message: \nStacktrace:\n0   chromedriver                        0x000000010078b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100783c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x000000010026683c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75008\n3   chromedriver                        0x00000001002afd7c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375360\n4   chromedriver                        0x00000001002eefe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n5   chromedriver                        0x00000001002a407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n6   chromedriver                        0x000000010074a884 cxxbridge1$str$ptr + 2831984\n7   chromedriver                        0x000000010074dfcc cxxbridge1$str$ptr + 2846136\n8   chromedriver                        0x000000010072f578 cxxbridge1$str$ptr + 2720612\n9   chromedriver                        0x000000010074e850 cxxbridge1$str$ptr + 2848316\n10  chromedriver                        0x000000010071f640 cxxbridge1$str$ptr + 2655276\n11  chromedriver                        0x0000000100772194 cxxbridge1$str$ptr + 2994048\n12  chromedriver                        0x0000000100772310 cxxbridge1$str$ptr + 2994428\n13  chromedriver                        0x000000010078385c cxxbridge1$str$ptr + 3065416\n14  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n15  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/",
+          "status": "PASS",
+          "duration": 0.5061769485473633
+        },
+        {
+          "step": 2,
+          "action": "type",
+          "target": "num_page7",
+          "value": "5",
+          "status": "FAIL",
+          "error": "Message: \nStacktrace:\n0   chromedriver                        0x000000010078b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100783c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x000000010026683c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75008\n3   chromedriver                        0x00000001002afd7c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375360\n4   chromedriver                        0x00000001002eefe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n5   chromedriver                        0x00000001002a407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n6   chromedriver                        0x000000010074a884 cxxbridge1$str$ptr + 2831984\n7   chromedriver                        0x000000010074dfcc cxxbridge1$str$ptr + 2846136\n8   chromedriver                        0x000000010072f578 cxxbridge1$str$ptr + 2720612\n9   chromedriver                        0x000000010074e850 cxxbridge1$str$ptr + 2848316\n10  chromedriver                        0x000000010071f640 cxxbridge1$str$ptr + 2655276\n11  chromedriver                        0x0000000100772194 cxxbridge1$str$ptr + 2994048\n12  chromedriver                        0x0000000100772310 cxxbridge1$str$ptr + 2994428\n13  chromedriver                        0x000000010078385c cxxbridge1$str$ptr + 3065416\n14  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n15  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+          "duration": 16.626513957977295
+        }
+      ],
+      "total_steps": 6,
+      "passed_steps": 1,
+      "test_name": "GenerateMultipleRandomIntegersWithValidParameters",
+      "test_description": "User generates multiple random integers with valid quantity and range and verifies results are displayed."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 18.64346718788147,
+      "error_message": "Message: \nStacktrace:\n0   chromedriver                        0x000000010078b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100783c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x000000010026683c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75008\n3   chromedriver                        0x00000001002afd7c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375360\n4   chromedriver                        0x00000001002eefe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n5   chromedriver                        0x00000001002a407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n6   chromedriver                        0x000000010074a884 cxxbridge1$str$ptr + 2831984\n7   chromedriver                        0x000000010074dfcc cxxbridge1$str$ptr + 2846136\n8   chromedriver                        0x000000010072f578 cxxbridge1$str$ptr + 2720612\n9   chromedriver                        0x000000010074e850 cxxbridge1$str$ptr + 2848316\n10  chromedriver                        0x000000010071f640 cxxbridge1$str$ptr + 2655276\n11  chromedriver                        0x0000000100772194 cxxbridge1$str$ptr + 2994048\n12  chromedriver                        0x0000000100772310 cxxbridge1$str$ptr + 2994428\n13  chromedriver                        0x000000010078385c cxxbridge1$str$ptr + 3065416\n14  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n15  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/",
+          "status": "PASS",
+          "duration": 0.5748889446258545
+        },
+        {
+          "step": 2,
+          "action": "type",
+          "target": "num_page7",
+          "value": "",
+          "status": "FAIL",
+          "error": "Message: \nStacktrace:\n0   chromedriver                        0x000000010078b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100783c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x000000010026683c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75008\n3   chromedriver                        0x00000001002afd7c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375360\n4   chromedriver                        0x00000001002eefe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n5   chromedriver                        0x00000001002a407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n6   chromedriver                        0x000000010074a884 cxxbridge1$str$ptr + 2831984\n7   chromedriver                        0x000000010074dfcc cxxbridge1$str$ptr + 2846136\n8   chromedriver                        0x000000010072f578 cxxbridge1$str$ptr + 2720612\n9   chromedriver                        0x000000010074e850 cxxbridge1$str$ptr + 2848316\n10  chromedriver                        0x000000010071f640 cxxbridge1$str$ptr + 2655276\n11  chromedriver                        0x0000000100772194 cxxbridge1$str$ptr + 2994048\n12  chromedriver                        0x0000000100772310 cxxbridge1$str$ptr + 2994428\n13  chromedriver                        0x000000010078385c cxxbridge1$str$ptr + 3065416\n14  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n15  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+          "duration": 16.584403038024902
+        }
+      ],
+      "total_steps": 6,
+      "passed_steps": 1,
+      "test_name": "SubmitEmptyInputFieldsShowsValidationError",
+      "test_description": "User submits the form with empty required fields and verifies validation error is shown."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 18.35153102874756,
+      "error_message": "Message: \nStacktrace:\n0   chromedriver                        0x000000010078b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100783c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x000000010026683c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75008\n3   chromedriver                        0x00000001002afd7c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375360\n4   chromedriver                        0x00000001002eefe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n5   chromedriver                        0x00000001002a407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n6   chromedriver                        0x000000010074a884 cxxbridge1$str$ptr + 2831984\n7   chromedriver                        0x000000010074dfcc cxxbridge1$str$ptr + 2846136\n8   chromedriver                        0x000000010072f578 cxxbridge1$str$ptr + 2720612\n9   chromedriver                        0x000000010074e850 cxxbridge1$str$ptr + 2848316\n10  chromedriver                        0x000000010071f640 cxxbridge1$str$ptr + 2655276\n11  chromedriver                        0x0000000100772194 cxxbridge1$str$ptr + 2994048\n12  chromedriver                        0x0000000100772310 cxxbridge1$str$ptr + 2994428\n13  chromedriver                        0x000000010078385c cxxbridge1$str$ptr + 3065416\n14  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n15  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/",
+          "status": "PASS",
+          "duration": 0.40830230712890625
+        },
+        {
+          "step": 2,
+          "action": "type",
+          "target": "min",
+          "value": "20",
+          "status": "FAIL",
+          "error": "Message: \nStacktrace:\n0   chromedriver                        0x000000010078b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100783c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x000000010026683c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75008\n3   chromedriver                        0x00000001002afd7c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375360\n4   chromedriver                        0x00000001002eefe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n5   chromedriver                        0x00000001002a407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n6   chromedriver                        0x000000010074a884 cxxbridge1$str$ptr + 2831984\n7   chromedriver                        0x000000010074dfcc cxxbridge1$str$ptr + 2846136\n8   chromedriver                        0x000000010072f578 cxxbridge1$str$ptr + 2720612\n9   chromedriver                        0x000000010074e850 cxxbridge1$str$ptr + 2848316\n10  chromedriver                        0x000000010071f640 cxxbridge1$str$ptr + 2655276\n11  chromedriver                        0x0000000100772194 cxxbridge1$str$ptr + 2994048\n12  chromedriver                        0x0000000100772310 cxxbridge1$str$ptr + 2994428\n13  chromedriver                        0x000000010078385c cxxbridge1$str$ptr + 3065416\n14  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n15  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+          "duration": 16.567548990249634
+        }
+      ],
+      "total_steps": 5,
+      "passed_steps": 1,
+      "test_name": "InvalidRangeMinGreaterThanMaxShowsError",
+      "test_description": "User enters a min value greater than max and verifies error message is displayed."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 18.629923105239868,
+      "error_message": "Message: \nStacktrace:\n0   chromedriver                        0x000000010078b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100783c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x000000010026683c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75008\n3   chromedriver                        0x00000001002afd7c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375360\n4   chromedriver                        0x00000001002eefe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n5   chromedriver                        0x00000001002a407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n6   chromedriver                        0x000000010074a884 cxxbridge1$str$ptr + 2831984\n7   chromedriver                        0x000000010074dfcc cxxbridge1$str$ptr + 2846136\n8   chromedriver                        0x000000010072f578 cxxbridge1$str$ptr + 2720612\n9   chromedriver                        0x000000010074e850 cxxbridge1$str$ptr + 2848316\n10  chromedriver                        0x000000010071f640 cxxbridge1$str$ptr + 2655276\n11  chromedriver                        0x0000000100772194 cxxbridge1$str$ptr + 2994048\n12  chromedriver                        0x0000000100772310 cxxbridge1$str$ptr + 2994428\n13  chromedriver                        0x000000010078385c cxxbridge1$str$ptr + 3065416\n14  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n15  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/",
+          "status": "PASS",
+          "duration": 0.3979148864746094
+        },
+        {
+          "step": 2,
+          "action": "type",
+          "target": "num_page7",
+          "value": "3",
+          "status": "FAIL",
+          "error": "Message: \nStacktrace:\n0   chromedriver                        0x000000010078b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100783c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x000000010026683c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75008\n3   chromedriver                        0x00000001002afd7c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375360\n4   chromedriver                        0x00000001002eefe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n5   chromedriver                        0x00000001002a407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n6   chromedriver                        0x000000010074a884 cxxbridge1$str$ptr + 2831984\n7   chromedriver                        0x000000010074dfcc cxxbridge1$str$ptr + 2846136\n8   chromedriver                        0x000000010072f578 cxxbridge1$str$ptr + 2720612\n9   chromedriver                        0x000000010074e850 cxxbridge1$str$ptr + 2848316\n10  chromedriver                        0x000000010071f640 cxxbridge1$str$ptr + 2655276\n11  chromedriver                        0x0000000100772194 cxxbridge1$str$ptr + 2994048\n12  chromedriver                        0x0000000100772310 cxxbridge1$str$ptr + 2994428\n13  chromedriver                        0x000000010078385c cxxbridge1$str$ptr + 3065416\n14  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n15  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+          "duration": 16.629822969436646
+        }
+      ],
+      "total_steps": 8,
+      "passed_steps": 1,
+      "test_name": "ResetFormClearsAllInputs",
+      "test_description": "User fills inputs and clicks reset button to verify all inputs are cleared."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 18.454673051834106,
+      "error_message": "Message: \nStacktrace:\n0   chromedriver                        0x000000010078b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100783c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x000000010026683c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75008\n3   chromedriver                        0x00000001002afd7c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375360\n4   chromedriver                        0x00000001002eefe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n5   chromedriver                        0x00000001002a407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n6   chromedriver                        0x000000010074a884 cxxbridge1$str$ptr + 2831984\n7   chromedriver                        0x000000010074dfcc cxxbridge1$str$ptr + 2846136\n8   chromedriver                        0x000000010072f578 cxxbridge1$str$ptr + 2720612\n9   chromedriver                        0x000000010074e850 cxxbridge1$str$ptr + 2848316\n10  chromedriver                        0x000000010071f640 cxxbridge1$str$ptr + 2655276\n11  chromedriver                        0x0000000100772194 cxxbridge1$str$ptr + 2994048\n12  chromedriver                        0x0000000100772310 cxxbridge1$str$ptr + 2994428\n13  chromedriver                        0x000000010078385c cxxbridge1$str$ptr + 3065416\n14  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n15  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/",
+          "status": "PASS",
+          "duration": 0.38224101066589355
+        },
+        {
+          "step": 2,
+          "action": "type",
+          "target": "min_page8",
+          "value": "0.0",
+          "status": "FAIL",
+          "error": "Message: \nStacktrace:\n0   chromedriver                        0x000000010078b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100783c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x000000010026683c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75008\n3   chromedriver                        0x00000001002afd7c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375360\n4   chromedriver                        0x00000001002eefe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n5   chromedriver                        0x00000001002a407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n6   chromedriver                        0x000000010074a884 cxxbridge1$str$ptr + 2831984\n7   chromedriver                        0x000000010074dfcc cxxbridge1$str$ptr + 2846136\n8   chromedriver                        0x000000010072f578 cxxbridge1$str$ptr + 2720612\n9   chromedriver                        0x000000010074e850 cxxbridge1$str$ptr + 2848316\n10  chromedriver                        0x000000010071f640 cxxbridge1$str$ptr + 2655276\n11  chromedriver                        0x0000000100772194 cxxbridge1$str$ptr + 2994048\n12  chromedriver                        0x0000000100772310 cxxbridge1$str$ptr + 2994428\n13  chromedriver                        0x000000010078385c cxxbridge1$str$ptr + 3065416\n14  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n15  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+          "duration": 16.621163606643677
+        }
+      ],
+      "total_steps": 5,
+      "passed_steps": 1,
+      "test_name": "GenerateDecimalFractionsWithinRange",
+      "test_description": "User generates decimal fractions within a specified range and verifies results are displayed."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 3.900653123855591,
+      "error_message": "Message: element click intercepted: Element <input type=\"text\" name=\"q\" size=\"16\"> is not clickable at point (963, 75). Other element would receive the click: <div style=\"margin: 0px 16px 16px 16px\">...</div>\n  (Session info: chrome=144.0.7559.133)\nStacktrace:\n0   chromedriver                        0x000000010078b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100783c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x000000010026683c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75008\n3   chromedriver                        0x00000001002b5aa0 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 399204\n4   chromedriver                        0x00000001002b3fc8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392332\n5   chromedriver                        0x00000001002b1d30 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 383476\n6   chromedriver                        0x00000001002b10d0 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 380308\n7   chromedriver                        0x00000001002a5cc0 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334212\n8   chromedriver                        0x00000001002a573c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 332800\n9   chromedriver                        0x00000001002eefe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n10  chromedriver                        0x00000001002a407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n11  chromedriver                        0x000000010074a884 cxxbridge1$str$ptr + 2831984\n12  chromedriver                        0x000000010074dfcc cxxbridge1$str$ptr + 2846136\n13  chromedriver                        0x000000010072f578 cxxbridge1$str$ptr + 2720612\n14  chromedriver                        0x000000010074e850 cxxbridge1$str$ptr + 2848316\n15  chromedriver                        0x000000010071f640 cxxbridge1$str$ptr + 2655276\n16  chromedriver                        0x0000000100772194 cxxbridge1$str$ptr + 2994048\n17  chromedriver                        0x0000000100772310 cxxbridge1$str$ptr + 2994428\n18  chromedriver                        0x000000010078385c cxxbridge1$str$ptr + 3065416\n19  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n20  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/",
+          "status": "PASS",
+          "duration": 0.30561089515686035
+        },
+        {
+          "step": 2,
+          "action": "type",
+          "target": "q_page1",
+          "value": "apple\nbanana\ncherry\n",
+          "status": "PASS",
+          "duration": 0.585568904876709
+        },
+        {
+          "step": 3,
+          "action": "click",
+          "target": "input_3",
+          "value": null,
+          "status": "FAIL",
+          "error": "Message: element click intercepted: Element <input type=\"text\" name=\"q\" size=\"16\"> is not clickable at point (963, 75). Other element would receive the click: <div style=\"margin: 0px 16px 16px 16px\">...</div>\n  (Session info: chrome=144.0.7559.133)\nStacktrace:\n0   chromedriver                        0x000000010078b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100783c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x000000010026683c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75008\n3   chromedriver                        0x00000001002b5aa0 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 399204\n4   chromedriver                        0x00000001002b3fc8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392332\n5   chromedriver                        0x00000001002b1d30 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 383476\n6   chromedriver                        0x00000001002b10d0 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 380308\n7   chromedriver                        0x00000001002a5cc0 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334212\n8   chromedriver                        0x00000001002a573c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 332800\n9   chromedriver                        0x00000001002eefe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n10  chromedriver                        0x00000001002a407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n11  chromedriver                        0x000000010074a884 cxxbridge1$str$ptr + 2831984\n12  chromedriver                        0x000000010074dfcc cxxbridge1$str$ptr + 2846136\n13  chromedriver                        0x000000010072f578 cxxbridge1$str$ptr + 2720612\n14  chromedriver                        0x000000010074e850 cxxbridge1$str$ptr + 2848316\n15  chromedriver                        0x000000010071f640 cxxbridge1$str$ptr + 2655276\n16  chromedriver                        0x0000000100772194 cxxbridge1$str$ptr + 2994048\n17  chromedriver                        0x0000000100772310 cxxbridge1$str$ptr + 2994428\n18  chromedriver                        0x000000010078385c cxxbridge1$str$ptr + 3065416\n19  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n20  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+          "duration": 1.1221129894256592
+        }
+      ],
+      "total_steps": 4,
+      "passed_steps": 2,
+      "test_name": "ShuffleListRandomizerFunctionality",
+      "test_description": "User navigates to list randomizer, inputs list items, randomizes and verifies results are displayed."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 3.357774257659912,
+      "error_message": "Message: element click intercepted: Element <input type=\"text\" name=\"q\" size=\"16\"> is not clickable at point (963, 75). Other element would receive the click: <div style=\"margin: 0px 16px 16px 16px\">...</div>\n  (Session info: chrome=144.0.7559.133)\nStacktrace:\n0   chromedriver                        0x000000010078b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100783c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x000000010026683c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75008\n3   chromedriver                        0x00000001002b5aa0 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 399204\n4   chromedriver                        0x00000001002b3fc8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392332\n5   chromedriver                        0x00000001002b1d30 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 383476\n6   chromedriver                        0x00000001002b10d0 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 380308\n7   chromedriver                        0x00000001002a5cc0 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334212\n8   chromedriver                        0x00000001002a573c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 332800\n9   chromedriver                        0x00000001002eefe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n10  chromedriver                        0x00000001002a407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n11  chromedriver                        0x000000010074a884 cxxbridge1$str$ptr + 2831984\n12  chromedriver                        0x000000010074dfcc cxxbridge1$str$ptr + 2846136\n13  chromedriver                        0x000000010072f578 cxxbridge1$str$ptr + 2720612\n14  chromedriver                        0x000000010074e850 cxxbridge1$str$ptr + 2848316\n15  chromedriver                        0x000000010071f640 cxxbridge1$str$ptr + 2655276\n16  chromedriver                        0x0000000100772194 cxxbridge1$str$ptr + 2994048\n17  chromedriver                        0x0000000100772310 cxxbridge1$str$ptr + 2994428\n18  chromedriver                        0x000000010078385c cxxbridge1$str$ptr + 3065416\n19  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n20  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/",
+          "status": "PASS",
+          "duration": 0.5909619331359863
+        },
+        {
+          "step": 2,
+          "action": "click",
+          "target": "input_12",
+          "value": null,
+          "status": "FAIL",
+          "error": "Message: element click intercepted: Element <input type=\"text\" name=\"q\" size=\"16\"> is not clickable at point (963, 75). Other element would receive the click: <div style=\"margin: 0px 16px 16px 16px\">...</div>\n  (Session info: chrome=144.0.7559.133)\nStacktrace:\n0   chromedriver                        0x000000010078b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100783c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x000000010026683c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75008\n3   chromedriver                        0x00000001002b5aa0 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 399204\n4   chromedriver                        0x00000001002b3fc8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392332\n5   chromedriver                        0x00000001002b1d30 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 383476\n6   chromedriver                        0x00000001002b10d0 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 380308\n7   chromedriver                        0x00000001002a5cc0 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334212\n8   chromedriver                        0x00000001002a573c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 332800\n9   chromedriver                        0x00000001002eefe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n10  chromedriver                        0x00000001002a407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n11  chromedriver                        0x000000010074a884 cxxbridge1$str$ptr + 2831984\n12  chromedriver                        0x000000010074dfcc cxxbridge1$str$ptr + 2846136\n13  chromedriver                        0x000000010072f578 cxxbridge1$str$ptr + 2720612\n14  chromedriver                        0x000000010074e850 cxxbridge1$str$ptr + 2848316\n15  chromedriver                        0x000000010071f640 cxxbridge1$str$ptr + 2655276\n16  chromedriver                        0x0000000100772194 cxxbridge1$str$ptr + 2994048\n17  chromedriver                        0x0000000100772310 cxxbridge1$str$ptr + 2994428\n18  chromedriver                        0x000000010078385c cxxbridge1$str$ptr + 3065416\n19  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n20  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+          "duration": 1.070634126663208
+        }
+      ],
+      "total_steps": 3,
+      "passed_steps": 1,
+      "test_name": "CoinFlipperSimulation",
+      "test_description": "User uses the coin flipper simulation and verifies result is displayed."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 3.605494976043701,
+      "error_message": "Message: element click intercepted: Element <input type=\"text\" name=\"q\" size=\"16\"> is not clickable at point (963, 75). Other element would receive the click: <div style=\"margin: 0px 16px 16px 16px\">...</div>\n  (Session info: chrome=144.0.7559.133)\nStacktrace:\n0   chromedriver                        0x000000010078b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100783c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x000000010026683c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75008\n3   chromedriver                        0x00000001002b5aa0 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 399204\n4   chromedriver                        0x00000001002b3fc8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392332\n5   chromedriver                        0x00000001002b1d30 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 383476\n6   chromedriver                        0x00000001002b10d0 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 380308\n7   chromedriver                        0x00000001002a5cc0 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334212\n8   chromedriver                        0x00000001002a573c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 332800\n9   chromedriver                        0x00000001002eefe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n10  chromedriver                        0x00000001002a407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n11  chromedriver                        0x000000010074a884 cxxbridge1$str$ptr + 2831984\n12  chromedriver                        0x000000010074dfcc cxxbridge1$str$ptr + 2846136\n13  chromedriver                        0x000000010072f578 cxxbridge1$str$ptr + 2720612\n14  chromedriver                        0x000000010074e850 cxxbridge1$str$ptr + 2848316\n15  chromedriver                        0x000000010071f640 cxxbridge1$str$ptr + 2655276\n16  chromedriver                        0x0000000100772194 cxxbridge1$str$ptr + 2994048\n17  chromedriver                        0x0000000100772310 cxxbridge1$str$ptr + 2994428\n18  chromedriver                        0x000000010078385c cxxbridge1$str$ptr + 3065416\n19  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n20  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/",
+          "status": "PASS",
+          "duration": 0.8756122589111328
+        },
+        {
+          "step": 2,
+          "action": "click",
+          "target": "input_21",
+          "value": null,
+          "status": "FAIL",
+          "error": "Message: element click intercepted: Element <input type=\"text\" name=\"q\" size=\"16\"> is not clickable at point (963, 75). Other element would receive the click: <div style=\"margin: 0px 16px 16px 16px\">...</div>\n  (Session info: chrome=144.0.7559.133)\nStacktrace:\n0   chromedriver                        0x000000010078b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100783c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x000000010026683c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75008\n3   chromedriver                        0x00000001002b5aa0 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 399204\n4   chromedriver                        0x00000001002b3fc8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392332\n5   chromedriver                        0x00000001002b1d30 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 383476\n6   chromedriver                        0x00000001002b10d0 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 380308\n7   chromedriver                        0x00000001002a5cc0 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334212\n8   chromedriver                        0x00000001002a573c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 332800\n9   chromedriver                        0x00000001002eefe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n10  chromedriver                        0x00000001002a407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n11  chromedriver                        0x000000010074a884 cxxbridge1$str$ptr + 2831984\n12  chromedriver                        0x000000010074dfcc cxxbridge1$str$ptr + 2846136\n13  chromedriver                        0x000000010072f578 cxxbridge1$str$ptr + 2720612\n14  chromedriver                        0x000000010074e850 cxxbridge1$str$ptr + 2848316\n15  chromedriver                        0x000000010071f640 cxxbridge1$str$ptr + 2655276\n16  chromedriver                        0x0000000100772194 cxxbridge1$str$ptr + 2994048\n17  chromedriver                        0x0000000100772310 cxxbridge1$str$ptr + 2994428\n18  chromedriver                        0x000000010078385c cxxbridge1$str$ptr + 3065416\n19  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n20  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+          "duration": 1.060403823852539
+        }
+      ],
+      "total_steps": 3,
+      "passed_steps": 1,
+      "test_name": "DiceRollerSimulation",
+      "test_description": "User uses the dice roller simulation and verifies result is displayed."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 3.276442050933838,
+      "error_message": "Message: element click intercepted: Element <input type=\"text\" name=\"q\" size=\"16\"> is not clickable at point (963, 75). Other element would receive the click: <div style=\"margin: 0px 16px 16px 16px\">...</div>\n  (Session info: chrome=144.0.7559.133)\nStacktrace:\n0   chromedriver                        0x000000010078b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100783c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x000000010026683c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75008\n3   chromedriver                        0x00000001002b5aa0 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 399204\n4   chromedriver                        0x00000001002b3fc8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392332\n5   chromedriver                        0x00000001002b1d30 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 383476\n6   chromedriver                        0x00000001002b10d0 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 380308\n7   chromedriver                        0x00000001002a5cc0 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334212\n8   chromedriver                        0x00000001002a573c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 332800\n9   chromedriver                        0x00000001002eefe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n10  chromedriver                        0x00000001002a407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n11  chromedriver                        0x000000010074a884 cxxbridge1$str$ptr + 2831984\n12  chromedriver                        0x000000010074dfcc cxxbridge1$str$ptr + 2846136\n13  chromedriver                        0x000000010072f578 cxxbridge1$str$ptr + 2720612\n14  chromedriver                        0x000000010074e850 cxxbridge1$str$ptr + 2848316\n15  chromedriver                        0x000000010071f640 cxxbridge1$str$ptr + 2655276\n16  chromedriver                        0x0000000100772194 cxxbridge1$str$ptr + 2994048\n17  chromedriver                        0x0000000100772310 cxxbridge1$str$ptr + 2994428\n18  chromedriver                        0x000000010078385c cxxbridge1$str$ptr + 3065416\n19  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n20  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/",
+          "status": "PASS",
+          "duration": 0.748586893081665
+        },
+        {
+          "step": 2,
+          "action": "click",
+          "target": "input_39",
+          "value": null,
+          "status": "FAIL",
+          "error": "Message: element click intercepted: Element <input type=\"text\" name=\"q\" size=\"16\"> is not clickable at point (963, 75). Other element would receive the click: <div style=\"margin: 0px 16px 16px 16px\">...</div>\n  (Session info: chrome=144.0.7559.133)\nStacktrace:\n0   chromedriver                        0x000000010078b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100783c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x000000010026683c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75008\n3   chromedriver                        0x00000001002b5aa0 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 399204\n4   chromedriver                        0x00000001002b3fc8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392332\n5   chromedriver                        0x00000001002b1d30 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 383476\n6   chromedriver                        0x00000001002b10d0 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 380308\n7   chromedriver                        0x00000001002a5cc0 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334212\n8   chromedriver                        0x00000001002a573c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 332800\n9   chromedriver                        0x00000001002eefe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n10  chromedriver                        0x00000001002a407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n11  chromedriver                        0x000000010074a884 cxxbridge1$str$ptr + 2831984\n12  chromedriver                        0x000000010074dfcc cxxbridge1$str$ptr + 2846136\n13  chromedriver                        0x000000010072f578 cxxbridge1$str$ptr + 2720612\n14  chromedriver                        0x000000010074e850 cxxbridge1$str$ptr + 2848316\n15  chromedriver                        0x000000010071f640 cxxbridge1$str$ptr + 2655276\n16  chromedriver                        0x0000000100772194 cxxbridge1$str$ptr + 2994048\n17  chromedriver                        0x0000000100772310 cxxbridge1$str$ptr + 2994428\n18  chromedriver                        0x000000010078385c cxxbridge1$str$ptr + 3065416\n19  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n20  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+          "duration": 1.0447449684143066
+        }
+      ],
+      "total_steps": 3,
+      "passed_steps": 1,
+      "test_name": "PlayingCardShufflerSimulation",
+      "test_description": "User uses the playing card shuffler and verifies shuffled cards are displayed."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 3.062952995300293,
+      "error_message": "Message: element click intercepted: Element <input type=\"text\" name=\"q\" size=\"16\"> is not clickable at point (963, 75). Other element would receive the click: <div style=\"margin: 0px 16px 16px 16px\">...</div>\n  (Session info: chrome=144.0.7559.133)\nStacktrace:\n0   chromedriver                        0x000000010078b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100783c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x000000010026683c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75008\n3   chromedriver                        0x00000001002b5aa0 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 399204\n4   chromedriver                        0x00000001002b3fc8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392332\n5   chromedriver                        0x00000001002b1d30 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 383476\n6   chromedriver                        0x00000001002b10d0 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 380308\n7   chromedriver                        0x00000001002a5cc0 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334212\n8   chromedriver                        0x00000001002a573c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 332800\n9   chromedriver                        0x00000001002eefe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n10  chromedriver                        0x00000001002a407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n11  chromedriver                        0x000000010074a884 cxxbridge1$str$ptr + 2831984\n12  chromedriver                        0x000000010074dfcc cxxbridge1$str$ptr + 2846136\n13  chromedriver                        0x000000010072f578 cxxbridge1$str$ptr + 2720612\n14  chromedriver                        0x000000010074e850 cxxbridge1$str$ptr + 2848316\n15  chromedriver                        0x000000010071f640 cxxbridge1$str$ptr + 2655276\n16  chromedriver                        0x0000000100772194 cxxbridge1$str$ptr + 2994048\n17  chromedriver                        0x0000000100772310 cxxbridge1$str$ptr + 2994428\n18  chromedriver                        0x000000010078385c cxxbridge1$str$ptr + 3065416\n19  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n20  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/",
+          "status": "PASS",
+          "duration": 0.41305994987487793
+        },
+        {
+          "step": 2,
+          "action": "click",
+          "target": "input_66",
+          "value": null,
+          "status": "FAIL",
+          "error": "Message: element click intercepted: Element <input type=\"text\" name=\"q\" size=\"16\"> is not clickable at point (963, 75). Other element would receive the click: <div style=\"margin: 0px 16px 16px 16px\">...</div>\n  (Session info: chrome=144.0.7559.133)\nStacktrace:\n0   chromedriver                        0x000000010078b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100783c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x000000010026683c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75008\n3   chromedriver                        0x00000001002b5aa0 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 399204\n4   chromedriver                        0x00000001002b3fc8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392332\n5   chromedriver                        0x00000001002b1d30 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 383476\n6   chromedriver                        0x00000001002b10d0 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 380308\n7   chromedriver                        0x00000001002a5cc0 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334212\n8   chromedriver                        0x00000001002a573c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 332800\n9   chromedriver                        0x00000001002eefe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n10  chromedriver                        0x00000001002a407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n11  chromedriver                        0x000000010074a884 cxxbridge1$str$ptr + 2831984\n12  chromedriver                        0x000000010074dfcc cxxbridge1$str$ptr + 2846136\n13  chromedriver                        0x000000010072f578 cxxbridge1$str$ptr + 2720612\n14  chromedriver                        0x000000010074e850 cxxbridge1$str$ptr + 2848316\n15  chromedriver                        0x000000010071f640 cxxbridge1$str$ptr + 2655276\n16  chromedriver                        0x0000000100772194 cxxbridge1$str$ptr + 2994048\n17  chromedriver                        0x0000000100772310 cxxbridge1$str$ptr + 2994428\n18  chromedriver                        0x000000010078385c cxxbridge1$str$ptr + 3065416\n19  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n20  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+          "duration": 1.0569078922271729
+        }
+      ],
+      "total_steps": 3,
+      "passed_steps": 1,
+      "test_name": "LotteryQuickPickFunctionality",
+      "test_description": "User uses the lottery quick-pick tool and verifies numbers are generated."
+    },
+    {
+      "status": "PASS",
+      "execution_time": 2.6650280952453613,
+      "error_message": null,
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/api/",
+          "status": "PASS",
+          "duration": 0.922490119934082
+        },
+        {
+          "step": 2,
+          "action": "assert_url_contains",
+          "target": null,
+          "value": "api",
+          "status": "PASS",
+          "duration": 0.0070552825927734375
+        }
+      ],
+      "total_steps": 2,
+      "passed_steps": 2,
+      "test_name": "NavigationToAPIPage",
+      "test_description": "User navigates to the API & Integration page and verifies URL contains 'api'."
+    },
+    {
+      "status": "FAIL",
+      "execution_time": 18.684856176376343,
+      "error_message": "Message: \nStacktrace:\n0   chromedriver                        0x000000010078b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100783c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x000000010026683c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75008\n3   chromedriver                        0x00000001002afd7c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375360\n4   chromedriver                        0x00000001002eefe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n5   chromedriver                        0x00000001002a407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n6   chromedriver                        0x000000010074a884 cxxbridge1$str$ptr + 2831984\n7   chromedriver                        0x000000010074dfcc cxxbridge1$str$ptr + 2846136\n8   chromedriver                        0x000000010072f578 cxxbridge1$str$ptr + 2720612\n9   chromedriver                        0x000000010074e850 cxxbridge1$str$ptr + 2848316\n10  chromedriver                        0x000000010071f640 cxxbridge1$str$ptr + 2655276\n11  chromedriver                        0x0000000100772194 cxxbridge1$str$ptr + 2994048\n12  chromedriver                        0x0000000100772310 cxxbridge1$str$ptr + 2994428\n13  chromedriver                        0x000000010078385c cxxbridge1$str$ptr + 3065416\n14  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n15  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+      "steps_executed": [
+        {
+          "step": 1,
+          "action": "navigate",
+          "target": null,
+          "value": "https://www.random.org/",
+          "status": "PASS",
+          "duration": 0.5867230892181396
+        },
+        {
+          "step": 2,
+          "action": "assert_disabled",
+          "target": "save-settings-disabled",
+          "value": null,
+          "status": "FAIL",
+          "error": "Message: \nStacktrace:\n0   chromedriver                        0x000000010078b928 cxxbridge1$str$ptr + 3098388\n1   chromedriver                        0x0000000100783c04 cxxbridge1$str$ptr + 3066352\n2   chromedriver                        0x000000010026683c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75008\n3   chromedriver                        0x00000001002afd7c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375360\n4   chromedriver                        0x00000001002eefe8 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634028\n5   chromedriver                        0x00000001002a407c _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326976\n6   chromedriver                        0x000000010074a884 cxxbridge1$str$ptr + 2831984\n7   chromedriver                        0x000000010074dfcc cxxbridge1$str$ptr + 2846136\n8   chromedriver                        0x000000010072f578 cxxbridge1$str$ptr + 2720612\n9   chromedriver                        0x000000010074e850 cxxbridge1$str$ptr + 2848316\n10  chromedriver                        0x000000010071f640 cxxbridge1$str$ptr + 2655276\n11  chromedriver                        0x0000000100772194 cxxbridge1$str$ptr + 2994048\n12  chromedriver                        0x0000000100772310 cxxbridge1$str$ptr + 2994428\n13  chromedriver                        0x000000010078385c cxxbridge1$str$ptr + 3065416\n14  libsystem_pthread.dylib             0x0000000190481c08 _pthread_start + 136\n15  libsystem_pthread.dylib             0x000000019047cba8 thread_start + 8\n",
+          "duration": 16.714014291763306
+        }
+      ],
+      "total_steps": 2,
+      "passed_steps": 1,
+      "test_name": "LoginButtonDisabledWhenNotAuthenticated",
+      "test_description": "Verify that the login button is disabled when user is not authenticated."
+    }
+  ]
+}
